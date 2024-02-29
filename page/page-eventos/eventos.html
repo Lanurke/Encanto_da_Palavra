@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+		<title>Eventos</title>
+
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="style_events_layout.css">
+		<link rel="stylesheet" href="style_events_navbar.css">
+		<link rel="stylesheet" href="style_events_card.css">
+		<link rel="stylesheet" href="style_events_main.css">
+		<link rel="stylesheet" href="../page-eventos/style_events_card.css">
+		<link rel="stylesheet" href="../../CSS/style.footer-header.css">
+		<link rel="stylesheet" href="../../CSS/style_footer-underfoot.css">
+		<link rel="stylesheet" href="../../CSS/style.footer-nav-icon.css">
+		<link rel="stylesheet" href="../../CSS/style.navbar-vertical.css">
+		<link rel="stylesheet" href="../../CSS/style.footer-social-media.css">
+		<link rel="stylesheet" href="../../CSS/style.alert.css">
+
+        <!-- Google Fonts -->
+      	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap">
+		<link rel="stylesheet" href="https://fonts.cdnfonts.com/css/century-schoolbook">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lugrasimo">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Felix+Titling&display=swap">
+		
+		<!-- Font Awesome Icons-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+		<!-- Scripts -->
+		<script src="../../JS/scritp_icon.js"></script>
+		<script src="../../JS/script_form.js"></script>
+		<script src="/JS/script.external_page.js"></script>
+		<script src="/JS/script_vertical.js"></script>
+		<script src="../../JS/script_card.js"></script>
+		<script src="/JS/script.clube.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+		<script src="https://kit.fontawesome.com/ab6ecfd2fd.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<!--fundo transparente-->
+		<div id="background-overlay" class="hidden"></div>
+		<!-- Seção da barra de navegação -->
+		<header class="header" id="navbar">
+			<div class="blackbox">
+				<div class="header-container">
+					 <!-- Logo -->
+					<div class="header-logo">
+						<h1>Encanto da Palavra</h1>
+						<p>Um café para amantes da literatura</p>
+					</div>
+					<!-- Navegação Principal -->
+					<nav class="main-nav">
+						<ul>
+							<li><a href = "../../page/page-cardapio/cardapio.html#us" id="sobre_nos"> Sobre Nós</a></li>
+							<li><a href = "../page-reserva/reserva.html" id="reserva"> Faça sua Reserva</a></li>
+							<li><a href = "#" id="eventos">Eventos</a></li>
+							<li><a href = "../../page/page-contato/contato.html" id="contato">Contato</a></li>
+							<li id="more">&#9776;</li>
+						</ul>
+					</nav>
+				</div>
+				<!-- Banner -->
+				<div class="banner-contact">
+					<!-- Área de Exibição -->
+					<div class="display">
+						<div class="display-title-events">
+							<h1>Programação e Eventos</h1>
+						</div>
+					</div>
+				</div>
+				<!--Vertical Navbar-->
+				<div id="vertical-navbar-container"></div>
+			</div>
+		</header>
+		<main class="main" id="main">
+			<!--Primeira linha de card-->
+			<section class="line_1">
+				<!--Título do agrupamento de cards-->
+				<div class="events-title">
+					<h1>Próximos Eventos</h1>
+				</div>
+				<!-- Seção Top -->
+				<div class="events">
+					<!--Primeiro Card-->
+					<div class="wrapper">
+						<!-- Card Principal -->
+						<div class="card">
+							<div class="container">
+								<div class="container-img">
+									<img src="../../img/card_1.png" alt="Imagem do Card">
+								</div>
+								<div class="title">
+									<h1>Café e Contos</h1>
+								</div>
+							</div>
+							<div class="container-main">
+								<div class="subtitle">
+									<p id="name">Joana Alves Amorim</p>
+									<p id="date">15 de Outubro de 2023</p>
+									<p id="hour">Entre 19h. às 21h.</p>
+								</div>
+								<div class="container-button_1">
+									<button class="font_btn_1">Detalhes</button>
+								</div>
+							</div>
+						</div>
+						<!-- Detalhes do Card -->
+						<div class="card_details_1">
+							<div class="text-details">
+								<div class="top">
+									<h1>Noite de Narrativas Inspiradoras</h1>
+									<p>Participe de uma noite especial de Café e Contos na Encanto da Palavra com a autora Joana Alves Amorim para uma experiência única.</p>
+									<p>Desfrute de cafés premium, ouça histórias envolventes e crie conexões significativas em um ambiente calmo, aconchegante e charmoso.</p>
+									<p>Aproveite uma noite única com palavras, cafés premium e histórias envolventes de Joana Alves Amorim.</p>
+								</div>
+								<div class="under">
+									<p>Cafés Exclusivos</p>
+									<p>Narrativas Memoráveis</p>
+									<p>Atmosfera Aconchegante</p>
+								</div>
+							</div>
+							<div class="container-button_1">
+								<button class="back_btn_1">Retornar</button>
+							</div>
+						</div>
+					</div>
+					<!--Segundo Card-->
+					<div class="wrapper">
+						<!-- Card Principal -->
+						<div class="card">
+							<div class="container">
+								<div class="container-img">
+									<img src="../../img/card_2.png" alt="Imagem do Card">
+								</div>
+								<div class="title">
+									<h1>Sarau das Estações: Primavera</h1>
+								</div>
+							</div>
+							<div class="container-main">
+								<div class="subtitle">
+									<p id="name">Venha mostrar o seu talento!</p>
+									<p id="date">30 de Setembro</p>
+									<p id="hour">Entre 18h. às 22h.</p>
+								</div>
+								<div class="container-button_2">
+									<button class="font_btn_2">Detalhes</button>
+								</div>
+							</div>
+						</div>
+				
+						<!-- Detalhes do Card -->
+						<div class="card_details_2">
+							<div class="text-details">
+								<div class="top">
+									<h1>Uma Celebração de Palavras e Flores</h1>
+									<p>No Sarau das Estações: Primavera, a Encanto da Palavra se transforma em um palco poético, onde os participantes desvelam versos que celebram a chegada da estação das flores.</p>
+									<p>Nesse evento, a atmosfera da cafeteria se enche de poesia, enquanto cada presente compartilha suas criações inspiradas na renovação da Primavera. </p>
+									<p>O Sarau das Estações revela-se como um convite à reflexão e à expressão artística, proporcionando uma experiência única em meio a ricas narrativas poéticas. Na Encanto da Palavra, a magia da Primavera se entrelaça com a diversidade de vozes e estilos, criando um cenário envolvente e inspirador.</p>
+								</div>
+				
+								<div class="under">
+									<p>Venha participar!</p>
+								</div>
+							</div>
+							<div class="container-button_2">
+								<button class="back_btn_2">Retornar</button>
+							</div>
+						</div>
+					</div>
+					<!-- Terceiro Card -->
+					<div class="wrapper">
+						<!-- Card Principal -->
+						<div class="card">
+							<div class="container">
+								<div class="container-img">
+									<img src="../../img/card_3.png" alt="Imagem do Card">
+								</div>
+								<div class="title">
+									<h1>Feira Literária</h1>
+								</div>
+							</div>
+							<div class="container-main">
+								<div class="subtitle">
+									<p id="name">Encanto da Palavra</p>
+									<p id="date">15 à 18 de Novembro de 2023</p>
+									<p id="hour">Entre 09h. às 21h.</p>
+								</div>
+								<div class="container-button_3">
+									<button class="font_btn_3">Detalhes</button>
+								</div>
+							</div>
+						</div>
+						<!-- Detalhes do Card -->
+						<div class="card_details_3">
+							<div class="text-details">
+								<div class="top">
+									<h1>Leitura, Café e Magia</h1>
+									<p>Explore mundos literários na Feira Literária da Encanto da Palavra, um evento de três dias que transformará nossa cafeteria em um universo voltado pra literatura.</p>
+									<p>Descubra obras fascinantes, participe de palestras e mergulhe na magia das histórias. Delicie-se com cafés premium enquanto navega pelos corredores repletos de livros. </p>
+									<p>Uma experiência única aguarda você, conectando amantes da literatura em um ambiente aconchegante.</p>
+								</div>
+								<div class="under">
+									<p>Palestras</p>
+									<p>Escritores locais</p>
+									<p>Os melhores Best-sellers</p>
+								</div>
+							</div>
+							<div class="container-button_3">
+								<button class="back_btn_3">Retornar</button>
+							</div>
+						</div>
+					</div>
+					<!--Quarto Card-->
+					<div class="wrapper">
+						<!-- Card Principal -->
+						<div class="card">
+							<div class="container">
+								<div class="container-img">
+									<img src="../../img/card_4.jpg" alt="Imagem do Card">
+								</div>
+								<div class="title">
+									<h1>Workshop: "Poesia Moderna"</h1>
+								</div>
+							</div>
+							<div class="container-main">
+								<div class="subtitle">
+									<p id="name">Maximo Valentim</p>
+									<p id="date">15 de Dezembro de 2023</p>
+									<p id="hour">Entre 09h. às 15h.</p>
+								</div>
+								<div class="container-button_4">
+									<button class="font_btn_4">Detalhes</button>
+								</div>
+							</div>
+						</div>
+						<!-- Detalhes do Card -->
+						<div class="card_details_4">
+							<div class="text-details">
+								<div class="top">
+									<h1>Tertúlia Poética com Valentim</h1>
+									<p>Embarque numa imersão poética no workshop 'Poesia Moderna' liderado pelo aclamado poeta Maximo Valentim, na atmosfera única da Encanto da Palavra. Este evento exclusivo é uma oportunidade rara de mergulhar nas nuances da poesia contemporânea. </p>
+									<p>Maximo compartilhará sua expertise, desvendará técnicas, inspirações e os segredos por trás de suas próprias criações. </p>
+									<p>Uma oportunidade imperdível de conexão e aprendizado.</p>
+								</div>
+								<div class="under">
+									<p>Leitura Compartilhada</p>
+									<p>Oficina da Escrita Criativa</p>
+									<p>Painel de Discussão</p>
+								</div>
+							</div>
+							<div class="container-button_4">
+								<button class="back_btn_4">Retornar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--Segunda linha de card-->
+			<section class="line_2">
+				<!--Título do agrupamento de cards-->
+				<div class="events-title">
+					<h1>Eventos Recorrentes</h1>
+				</div>
+				<!-- Seção Top -->
+				<div class="events">
+					<!-- Quinto Card -->
+					<div class="wrapper">
+						<!-- Card Principal -->
+						<div class="card">
+							<div class="container">
+								<div class="container-img">
+									<img src="../../img/card_5.png" alt="Imagem do Card">
+								</div>
+								<div class="title">
+									<h1>Degustação Literária</h1>
+								</div>
+							</div>
+							<div class="container-main">
+								<div class="subtitle">
+									<p id="name">Venha saborear conosco!</p>
+									<p id="date">Todo sábado</p>
+									<p id="hour">Entre 17h. às 22h.</p>
+								</div>
+								<div class="container-button_5">
+									<button class="font_btn_5">Detalhes</button>
+								</div>
+							</div>
+						</div>
+						<!-- Detalhes do Card -->
+						<div class="card_details_5">
+							<div class="text-details">
+								<div class="top">
+									<h1>Um deleite sensorial</h1>
+									<p>Descubra o prazer único da Degustação Literária. Em nossos eventos, mergulhe em aromas de cafés refinados enquanto explora estantes repletas de livros. </p>
+									<p>Cada xícara se torna uma jornada literária, e a escolha de um livro é uma experiência pessoal. Celebre a cultura literária em um ambiente que harmoniza sabores e narrativas.</p>
+									<p>Na 'Encanto da Palavra', unimos o deleite do café à riqueza das palavras. Venha participar, descobrir, saborear e desfrutar de histórias memoráveis.</p>
+								</div>
+								<div class="under">
+									<p>Variedade de Sabores</p>
+									<p>Gêneros literários abudante</p>
+								</div>
+							</div>
+							<div class="container-button_5">
+								<button class="back_btn_5">Retornar</button>
+							</div>
+						</div>
+					</div>
+					<!-- Sexto Card -->
+					<div class="wrapper">
+						<!-- Card Principal -->
+						<div class="card">
+							<div class="container">
+								<div class="container-img">
+									<img src="../../img/card_13.jpg" alt="Imagem do Card">
+								</div>
+								<div class="title">
+									<h1>Sarau das Estações</h1>
+								</div>
+							</div>
+							<div class="container-main">
+								<div class="subtitle">
+									<p id="name">Um Sarau para cada estação</p>
+									<p id="date">Janeiro, Abril, Julho e Setembro</p>
+									<p id="hour">Entre 18h. às 22h.</p>
+								</div>
+								<div class="container-button_6">
+									<button class="font_btn_6">Detalhes</button>
+								</div>
+							</div>
+						</div>
+						<!-- Detalhes do Card -->
+						<div class="card_details_6">
+							<div class="text-details">
+								<div class="top">
+									<h1>Versos Sazonais</h1>
+									<p>No Sarau das Quatro Estações, a Encanto da Palavra se converterá em um cenário poético para quatro eventos anuais, cada um dedicado a uma estação do ano. Os participantes desvendarão versos que celebrarão as características únicas de cada estação, criando uma experiência imersiva.</p>
+									<p>A atmosfera da cafeteria se impregnará de poesia, com cada presente compartilhando suas criações inspiradas na singularidade de cada estação. Ao longo do ano, o Sarau das Quatro Estações se tornará um convite à reflexão e à expressão artística, oferecendo uma jornada rica em narrativas poéticas.</p>
+									<p>Cada evento destacará não apenas a beleza das estações, mas também a riqueza das experiências pessoais compartilhadas por meio da poesia. Será uma oportunidade única de celebrar a arte em sintonia com a natureza em constante transformação.</p>
+								</div>
+							</div>
+							<div class="container-button_6">
+								<button class="back_btn_6">Retornar</button>
+							</div>
+						</div>
+					</div>
+					<!-- Sétimo Card -->
+					<div class="wrapper">
+						<!-- Card Principal -->
+						<div class="card">
+							<div class="container">
+								<div class="container-img">
+									<img src="../../img/card_7.png" alt="Imagem do Card">
+								</div>
+								<div class="title">
+									<h1>Oficina da Escrita Criativa</h1>
+								</div>
+							</div>
+							<div class="container-main">
+								<div class="subtitle">
+									<p id="name">Soraya Matildes</p>
+									<p id="date">Todo sábado</p>
+									<p id="hour">Entre 08h. às 15h.</p>
+								</div>
+								<div class="container-button_7">
+									<button class="font_btn_7">Detalhes</button>
+								</div>
+							</div>
+						</div>
+						<!-- Detalhes do Card -->
+						<div class="card_details_7">
+							<div class="text-details">
+								<div class="top">
+									<h1>Explore sua Criatividade</h1>
+									<p>Participe da Oficina da Escrita Criativa por Soraya Matildes, um evento semanal na cafeteria Encanto da Palavra. Explore sua criatividade em um ambiente acolhedor, onde as palavras ganham vida. </p>
+									<p>A cada sábado, mergulhe em exercícios e técnicas que estimulam a expressão autêntica. Descubra novas formas de contar histórias e desenvolva sua voz literária através de ferramentas. Junte-se a nós para uma jornada de descoberta e inspiração.</p>
+
+								</div>
+								<div class="under">
+									<p>Estímulo Criativo</p>
+									<p>Como contar histórias</p>
+									<p>Aguçando sua voz literária</p>
+								</div>
+							</div>
+							<div class="container-button_7">
+								<button class="back_btn_7">Retornar</button>
+							</div>
+						</div>
+					</div>				
+				</div>
+			</section>		
+			<!--Terceira linha de card-->
+			<section class="line_3">
+				<!--Título do agrupamento de cards-->
+				<div class="events-title">
+					<h1>Eventos Futuros</h1>
+				</div>
+				<!-- Seção Top -->
+				<div class="events">
+					<!-- Nono Card -->
+					<div class="wrapper">
+						<!-- Card Principal -->
+						<div class="card">
+							<div class="container">
+								<div class="container-img">
+									<img src="../../img/card_9.png" alt="Imagem do Card">
+								</div>
+								<div class="title">
+									<h1>Encontro de Autores Locais</h1>
+								</div>
+							</div>
+							<div class="container-main">
+								<div class="subtitle">
+									<p id="name">Venha mostrar o seu talento!</p>
+									<p id="date">Todo dia 23 à partir de 2024</p>
+									<p id="hour">Entre 17h. às 22h.</p>
+								</div>
+								<div class="container-button_9">
+									<button class="font_btn_9">Detalhes</button>
+								</div>
+							</div>
+						</div>
+						<!-- Detalhes do Card -->
+						<div class="card_details_9">
+							<div class="text-details">
+								<div class="top">
+									<h1>Conexões Literárias</h1>
+									<p>O Encontro de Escritores Locais na Encanto da Palavra destaca a riqueza literária da comunidade. A partir de janeiro, em todo dia 23 no ano de 2024, autores da região compartilharão suas obras e experiências, promovendo a troca de ideias e conexões entre escritores e leitores.</p>
+									<p>Em um ambiente acolhedor, o encontro proporciona uma oportunidade única para apreciar a diversidade da produção literária local, oferecendo uma experiência enriquecedora para todos os amantes da escrita e da leitura.</p>
+									<p>Os interessados podem entrar em contato conosco através dos nossos meios de comunição para se inscrever. </p>
+								</div>
+							</div>
+							<div class="container-button_9">
+								<button class="back_btn_9">Retornar</button>
+							</div>
+						</div>
+					</div>				
+					<!-- Décimo Card -->
+					<div class="wrapper">
+						<!-- Card Principal -->
+						<div class="wrapper">
+							<!-- Card Principal -->
+							<div class="card">
+								<div class="container">
+									<div class="container-img">
+										<img src="../../img/card_10.png" alt="Imagem do Card">
+									</div>
+									<div class="title">
+										<h1>Sarau das Estações: Verão</h1>
+									</div>
+								</div>
+								<div class="container-main">
+									<div class="subtitle">
+										<p id="name">Venha mostrar o seu talento!</p>
+										<p id="date">30 de Janeiro de 2024</p>
+										<p id="hour">Entre 18h. às 22h.</p>
+									</div>
+									<div class="container-button_10">
+										<button class="font_btn_10">Detalhes</button>
+									</div>
+								</div>
+							</div>
+							<!-- Detalhes do Card -->
+							<div class="card_details_10">
+								<div class="text-details">
+									<div class="top">
+										<h1>Um Verão Literário Vibrante</h1>
+										<p>No Sarau das Estações: Verão, a Encanto da Palavra se veste com raios de inspiração, transformando-se em um palco efervescente onde as palavras dançam ao ritmo da estação mais quente do ano.</p>
+										<p>Nesse espetáculo literário, a cafeteria se torna uma sinfonia de versos, cada participante desfrutando do calor poético inspirado pelo esplendor do Verão. </p>
+										<p>O Sarau das Estações revela-se como um convite à imersão em narrativas ardentes e expressões artísticas, proporcionando uma jornada única mediante experiências poéticas envolventes. Na Encanto da Palavra, a magia estival se entrelaça com a diversidade de vozes e estilos, criando um cenário vibrante e inspirador que aquece corações e mentes.</p>
+									</div>
+								</div>
+								<div class="container-button_10">
+									<button class="back_btn_10">Retornar</button>
+								</div>
+							</div>
+						</div>
+					</div>			
+					<!-- Décimo Primeiro Card -->
+					<div class="wrapper">
+						<!-- Card Principal -->
+						<div class="card">
+							<div class="container">
+								<div class="container-img">
+									<img src="../../img/card_11.png" alt="Imagem do Card">
+								</div>
+								<div class="title">
+									<h1>Leitura Dramatizada: "Sonhos"</h1>
+								</div>
+							</div>
+							<div class="container-main">
+								<div class="subtitle">
+									<p id="name">Augusto Fernandes</p>
+									<p id="date">15 de Fevereiro de 2024</p>
+									<p id="hour">Entre 18h. às 21h.</p>
+								</div>
+								<div class="container-button_11">
+									<button class="font_btn_11">Detalhes</button>
+								</div>
+							</div>
+						</div>
+						<!-- Detalhes do Card -->
+						<div class="card_details_11">
+							<div class="text-details">
+								<div class="top">
+									<h1>Entre Palavras e Sonhos</h1>
+									<p>No evento "Leitura Dramatizada: Sonhos" por Augusto Fernandes na Encanto da Palavra, vivencie uma imersão literária única. Augusto, renomado por suas narrativas envolventes, conduzirá uma leitura dramática de suas obras, explorando a temática dos sonhos de maneira profunda e envolvente.</p>
+									<p>A atmosfera da cafeteria se transformará em palco, onde os espectadores serão transportados para os cenários oníricos delineados pelas habilidosas palavras de Augusto Fernandes. </p>
+									<p>Junte-se a nós nessa jornada literária extraordinária, onde os sonhos se entrelaçam com a magia das palavras e a expressão artística atinge novos patamares.</p>
+								</div>
+							</div>
+							<div class="container-button_11">
+								<button class="back_btn_11">Retornar</button>
+							</div>
+						</div>
+					</div>
+					<!-- Décimo Segundo Card -->
+					<div class="wrapper">
+						<!-- Card Principal -->
+						<div class="card">
+							<div class="container">
+								<div class="container-img">
+									<img src="../../img/card_12.png" alt="Imagem do Card">
+								</div>
+								<div class="title">
+									<h1>Sarau Noturno</h1>
+								</div>
+							</div>
+							<div class="container-main">
+								<div class="subtitle">
+									<p id="name">Venha prestigiar!</p>
+									<p id="date">Toda sexta feira à partir de 2024</p>
+									<p id="hour">A partir das 19h.</p>
+								</div>
+								<div class="container-button_12">
+									<button class="font_btn_12">Detalhes</button>
+								</div>
+							</div>
+						</div>
+						<!-- Detalhes do Card -->
+						<div class="card_details_12">
+							<div class="text-details">
+								<div class="top">
+									<h1>Noite de Narrativas Inspiradoras</h1>
+									<p>No Sarau Noturno da Encanto da Palavra, explore uma fusão encantadora de artes e cultura. Este evento semanal destacará performances cativantes, desde poesia até música, proporcionando uma imersão nas diversas expressões artísticas da comunidade local.</p>
+									<p>Descubra talentos emergentes enquanto compartilha experiências com outros entusiastas. O ambiente intimista do sarau cria uma atmosfera propícia para a conexão entre artistas e apreciadores.</p>
+									<p>Venha vivenciar noites repletas de criatividade e descobertas culturais. A Encanto da Palavra se transforma em um palco acolhedor para a expressão artística noturna, oferecendo uma experiência única e enriquecedora para todos os presentes.</p>
+								</div>
+							</div>
+							<div class="container-button_12">
+								<button class="back_btn_12">Retornar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--Quarta linha de card-->
+			<section class="line_4">
+				<!--Título do agrupamento de cards-->
+				<div class="events-title">
+					<h1>TOP 4 Eventos Mais Importantes do Ano!</h1>
+				</div>
+				<!-- Seção Top -->
+				<div class="events">
+					<!-- Décimo Terceiro Card -->
+					<div class="wrapper">
+						<!-- Card Principal -->
+						<div class="card">
+							<div class="container">
+								<div class="container-img">
+									<img src="../../img/card_13.jpg" alt="Imagem do Card">
+								</div>
+								<div class="title">
+									<h1>Sarau das Estações</h1>
+								</div>
+							</div>
+							<div class="container-main">
+								<div class="subtitle">
+									<p id="name">Um Sarau para cada estação</p>
+									<p id="date">Janeiro, Abril, Julho e Setembro</p>
+									<p id="hour">Entre 18h. às 22h.</p>
+								</div>
+								<div class="container-button_13">
+									<button class="font_btn_13">Detalhes</button>
+								</div>
+							</div>
+						</div>
+						<!-- Detalhes do Card -->
+						<div class="card_details_13">
+							<div class="text-details">
+								<div class="top">
+									<h1>Versos Sazonais</h1>
+									<p>No Sarau das Quatro Estações, a Encanto da Palavra se converterá em um cenário poético para quatro eventos anuais, cada um dedicado a uma estação do ano. Os participantes desvendarão versos que celebrarão as características únicas de cada estação, criando uma experiência imersiva.</p>
+									<p>A atmosfera da cafeteria se impregnará de poesia, com cada presente compartilhando suas criações inspiradas na singularidade de cada estação. Ao longo do ano, o Sarau das Quatro Estações se tornará um convite à reflexão e à expressão artística, oferecendo uma jornada rica em narrativas poéticas.</p>
+									<p>Cada evento destacará não apenas a beleza das estações, mas também a riqueza das experiências pessoais compartilhadas por meio da poesia. Será uma oportunidade única de celebrar a arte em sintonia com a natureza em constante transformação.</p>
+								</div>
+							</div>
+							<div class="container-button_13">
+								<button class="back_btn_13">Retornar</button>
+							</div>
+						</div>
+					</div>
+ 					<!-- Décimo Quarto Card -->
+					<div class="wrapper">
+						<!-- Card Principal -->
+						<div class="wrapper">
+							<!-- Card Principal -->
+							<div class="card">
+								<div class="container">
+									<div class="container-img">
+										<img src="../../img/card_3.png" alt="Imagem do Card">
+									</div>
+									<div class="title">
+										<h1>Feira Literária</h1>
+									</div>
+								</div>
+								<div class="container-main">
+									<div class="subtitle">
+										<p id="name">Encanto da Palavra</p>
+										<p id="date">15 à 18 de Novembro de 2023</p>
+										<p id="hour">Entre 09h. às 21h.</p>
+									</div>
+									<div class="container-button_14">
+										<button class="font_btn_14">Detalhes</button>
+									</div>
+								</div>
+							</div>
+							<!-- Detalhes do Card -->
+							<div class="card_details_14">
+								<div class="text-details">
+									<div class="top">
+										<h1>Leitura, Café e Magia</h1>
+										<p>Explore mundos literários na Feira Literária da Encanto da Palavra, um evento de três dias que transformará nossa cafeteria em um universo voltado pra literatura.</p>
+										<p>Descubra obras fascinantes, participe de palestras e mergulhe na magia das histórias. Delicie-se com cafés premium enquanto navega pelos corredores repletos de livros.</p>
+										<p>Uma experiência única aguarda você, conectando amantes da literatura em um ambiente aconchegante.</p>
+									</div>
+									<div class="under">
+										<p>Palestras</p>
+										<p>Escritores locais</p>
+										<p>Os melhores Best-sellers</p>
+									</div>
+								</div>
+								<div class="container-button_14">
+									<button class="back_btn_14">Retornar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Décimo Quinto Card -->
+					<div class="wrapper">
+						<!-- Card Principal -->
+						<div class="card">
+							<div class="container">
+								<div class="container-img">
+									<img src="../../img/card_15.png" alt="Imagem do Card">
+								</div>
+								<div class="title">
+									<h1> Festival de Café e Cultura</h1>
+								</div>
+							</div>
+							<div class="container-main">
+								<div class="subtitle">
+									<p id="name">Saboreie as novidades do mercado</p>
+									<p id="date">05 de Maio de 2023</p>
+									<p id="hour">Entre 12h. às 21h.</p>
+								</div>
+								<div class="container-button_15">
+									<button class="font_btn_15">Detalhes</button>
+								</div>
+							</div>
+						</div>
+						<!-- Detalhes do Card -->
+						<div class="card_details_15">
+							<div class="text-details">
+								<div class="top">
+									<h1>Café em Festa!</h1>
+									<p> Uma celebração única que transcende o simples ato de tomar café. O Festival de Café e Cultura no "Encanto da Palavra" oferece degustações exclusivas de cafés especiais, combinadas com experiências culturais, como apresentações artísticas, música ao vivo e workshops sobre a arte da torrefação.</p>
+									<p>Este evento destaca não apenas a qualidade dos cafés servidos, mas também a atmosfera acolhedora da cafeteria, tornando-se um marco no calendário para os amantes de café. </p>
+									<p>Além das experiências sensoriais oferecidas pelas degustações, o Festival de Café e Cultura na "Encanto da Palavra" proporciona um espaço para a comunidade se reunir e compartilhar a paixão pelo café e pela cultura. </p>
+								</div>
+							</div>
+							<div class="container-button_15">
+								<button class="back_btn_15">Retornar</button>
+							</div>
+						</div>
+					</div>
+					<!-- Décimo Sexto Card -->
+					<div class="wrapper">
+						<!-- Card Principal -->
+						<div class="card">
+							<div class="container">
+								<div class="container-img">
+									<img src="../../img/card_16.png" alt="Imagem do Card">
+								</div>
+								<div class="title">
+									<h1>Noite das Revelações Literárias</h1>
+								</div>
+							</div>
+							<div class="container-main">
+								<div class="subtitle">
+									<p id="name">Venha prestigiar!</p>
+									<p id="date">16 de Maio de 2023</p>
+									<p id="hour">A partir das 19h.</p>
+								</div>
+								<div class="container-button_16">
+									<button class="font_btn_16">Detalhes</button>
+								</div>
+							</div>
+						</div>
+						<!-- Detalhes do Card -->
+						<div class="card_details_16">
+							<div class="text-details">
+								<div class="top">
+									<h1>Conexões Literárias</h1>
+									<p>Explore o inexplorado na "Encanto da Palavra" durante a "Noite das Revelações Literárias". Este evento excepcional vai além dos limites da experiência literária, proporcionando descobertas que desafiam as convenções.</p>
+									<p>Autores visionários compartilharão obras inovadoras, revelando novas perspectivas e mergulhando os participantes em narrativas que desafiam o status quo.</p>
+									<p>Além das leituras, deliciosas performances surpreendentes e discussões ousadas moldarão esta noite como um dos eventos mais impactantes do ano para a livraria. Prepare-se para ser envolvido por histórias que transcendem fronteiras e transformam a maneira como entendemos a literatura.</p>
+								</div>
+							</div>
+							<div class="container-button_16">
+								<button class="back_btn_16">Retornar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--Quinta linha de card-->
+			<section class="line_5">
+				<!--Título do agrupamento de cards-->
+				<div class="events-title">
+					<h1>Eventos Passados</h1>
+				</div>
+				<!-- Seção Top -->
+				<div class="events">
+					<!-- Décimo Sétimo Card -->
+					<div class="wrapper">
+						<!-- Card Principal -->
+						<div class="card">
+							<div class="container">
+								<div class="container-img">
+									<img src="../../img/card_15.png" alt="Imagem do Card">
+								</div>
+								<div class="title">
+									<h1> Festival de Café e Cultura</h1>
+								</div>
+							</div>
+							<div class="container-main">
+								<div class="subtitle">
+									<p id="name">Saboreie as novidades do mercado</p>
+									<p id="date">05 de Maio de 2023</p>
+									<p id="hour">Entre 12h. às 21h.</p>
+								</div>
+								<div class="container-button_17">
+									<button class="font_btn_17">Detalhes</button>
+								</div>
+							</div>
+						</div>
+						<!-- Detalhes do Card -->
+						<div class="card_details_17">
+							<div class="text-details">
+								<div class="top">
+									<h1>Café em Festa!</h1>
+									<p> Uma celebração única que transcende o simples ato de tomar café. O Festival de Café e Cultura no "Encanto da Palavra" oferece degustações exclusivas de cafés especiais, combinadas com experiências culturais, como apresentações artísticas, música ao vivo e workshops sobre a arte da torrefação.</p>
+									<p>Este evento destaca não apenas a qualidade dos cafés servidos, mas também a atmosfera acolhedora da cafeteria, tornando-se um marco no calendário para os amantes de café. </p>
+									<p>Além das experiências sensoriais oferecidas pelas degustações, o Festival de Café e Cultura na "Encanto da Palavra" proporciona um espaço para a comunidade se reunir e compartilhar a paixão pelo café e pela cultura. </p>
+								</div>
+							</div>
+							<div class="container-button_17">
+								<button class="back_btn_17">Retornar</button>
+							</div>
+						</div>
+					</div>
+ 					<!-- Décimo Oitavo Card -->
+					<div class="wrapper">
+						<!-- Card Principal -->
+						<div class="card">
+							<div class="container">
+								<div class="container-img">
+									<img src="../../img/card_16.png" alt="Imagem do Card">
+								</div>
+								<div class="title">
+									<h1>Noite das Revelações Literárias</h1>
+								</div>
+							</div>
+							<div class="container-main">
+								<div class="subtitle">
+									<p id="name">Venha prestigiar!</p>
+									<p id="date">18 de Maio de 2023</p>
+									<p id="hour">A partir das 19h.</p>
+								</div>
+								<div class="container-button_18">
+									<button class="font_btn_18">Detalhes</button>
+								</div>
+							</div>
+						</div>
+						<!-- Detalhes do Card -->
+						<div class="card_details_18">
+							<div class="text-details">
+								<div class="top">
+									<h1>Conexões Literárias</h1>
+									<p>Explore o inexplorado na "Encanto da Palavra" durante a "Noite das Revelações Literárias". Este evento excepcional vai além dos limites da experiência literária, proporcionando descobertas que desafiam as convenções.</p>
+									<p>Autores visionários compartilharão obras inovadoras, revelando novas perspectivas e mergulhando os participantes em narrativas que desafiam o status quo.</p>
+									<p>Além das leituras, deliciosas performances surpreendentes e discussões ousadas moldarão esta noite como um dos eventos mais impactantes do ano para a livraria. Prepare-se para ser envolvido por histórias que transcendem fronteiras e transformam a maneira como entendemos a literatura.</p>
+								</div>
+							</div>
+							<div class="container-button_18">
+								<button class="back_btn_18">Retornar</button>
+							</div>
+						</div>
+					</div>
+					<!-- Décimo Nono Card -->
+					<div class="wrapper">
+						<!-- Card Principal -->
+						<div class="card">
+							<div class="container">
+								<div class="container-img">
+									<img src="../../img/card_19.png" alt="Imagem do Card">
+								</div>
+								<div class="title">
+									<h1>Café com Prosa</h1>
+								</div>
+							</div>
+							<div class="container-main">
+								<div class="subtitle">
+									<p id="name">Rodrigo Fabiano</p>
+									<p id="date">23 de Junho de 2023</p>
+									<p id="hour">Entre 18h. às 22h.</p>
+								</div>
+								<div class="container-button_19">
+									<button class="font_btn_19">Detalhes</button>
+								</div>
+							</div>
+						</div>
+						<!-- Detalhes do Card -->
+						<div class="card_details_19">
+							<div class="text-details">
+								<div class="top">
+									<h1>Palavras e Sabores</h1>
+									<p> Explore a fusão única de aromas e palavras no Café com Prosa da Encanto da Palavra. Em um ambiente acolhedor, mergulhe em experiências sensoriais que transcendem o simples ato de tomar café. </p>
+									<p> Descubra o prazer de degustar cafés especiais enquanto se perde em narrativas que ganham vida a cada página. O Café com Prosa é mais que um evento, é uma celebração de sabores e histórias que transforma cada xícara em uma jornada única.</p>
+								</div>
+								<div class="under">
+									<p>Degustação Guiada</p>
+									<p>A arte de narrar</p>
+									<p>Oficina de Café e Poesia</p>
+								</div>
+							</div>
+							<div class="container-button_19">
+								<button class="back_btn_19">Retornar</button>
+							</div>
+						</div>
+					</div>
+					<!-- Vigésimo Card -->
+					<div class="wrapper">
+						<!-- Card Principal -->
+						<div class="card">
+							<div class="container">
+								<div class="container-img">
+									<img src="../../img/card_20.png" alt="Imagem do Card">
+								</div>
+								<div class="title">
+									<h1>Jornada no Mundo do Café</h1>
+								</div>
+							</div>
+							<div class="container-main">
+								<div class="subtitle">
+									<p id="name">Uma cacofonia de sensorial</p>
+									<p id="date">06 de Julho de 2023</p>
+									<p id="hour">A partir das 19h.</p>
+								</div>
+								<div class="container-button_20">
+									<button class="font_btn_20">Detalhes</button>
+								</div>
+							</div>
+						</div>
+						<!-- Detalhes do Card -->
+						<div class="card_details_20">
+							<div class="text-details">
+								<div class="top">
+									<h1>Conexões Literárias</h1>
+									<p>Em uma experiência única na Encanto da Palavra, embarque na Jornada no Mundo do Café, onde a magia do café encontra seu ápice. Cada gole é uma viagem sensorial, uma dança de sabores intensos. Neste encontro especial, explore a riqueza de blends exclusivos enquanto mergulha em narrativas que celebram o universo do café.</p>
+									<p>O perfume do café se entrelaça de maneira harmoniosa, criando uma atmosfera verdadeiramente mágica e memorável. Na celebração única da Jornada no Mundo do Café, cada sabor é uma descoberta, cada aroma é uma nota na sinfonia do café. Delicie-se nessa experiência que entrelaça as nuances do café em uma tapeçaria sensorial extraordinária.</p>
+								</div>
+								<div class="under">
+									<p>Blends Exclusivos</p>
+								</div>
+							</div>
+							<div class="container-button_20">
+								<button class="back_btn_20">Retornar</button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+		</main>
+		<!--Footer-->
+		<div id="footer-container"></div>
+	</body>
+</html>

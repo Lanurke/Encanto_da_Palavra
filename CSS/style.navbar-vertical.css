@@ -1,0 +1,147 @@
+/* Estilo da barra de navegação vertical */
+.vertical-navbar {
+    position: absolute;
+    width: 27rem;
+    height: 100%;
+    background-color: black;
+    color: rgba(252, 251, 251, 0.5);
+    left: 0;
+    top: 0;
+    font-family: 'Merriweather';
+    box-sizing: border-box;
+    border-right: solid 0.5rem rgba(252, 251, 251, 0.5);
+    opacity: 0;
+    z-index: 10;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s, background-color 1s;
+}
+
+/* Efeito para mostrar a barra de navegação */
+.vertical-navbar.show-vertical-navbar {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Estilo da navegação na barra */
+.vertical-navbar .nvb-nav {
+    display: grid;
+    margin-top: 2rem;
+}
+
+/* Estilo do logotipo na barra de navegação */
+.nvb-logo {
+    padding: 1.6rem 1rem;
+}
+
+/* Estilo do link no logotipo */
+.nvb-logo a {
+    font-size: 1.4rem;
+    color: #e6ccb1;
+    text-shadow: 5px 3px 3px black;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+/* Efeito de clique no logotipo */
+.nvb-logo:active {
+    scale: 0.9;
+}
+
+/* Estilo dos links na barra de navegação */
+.nvb-nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    color: rgba(252, 251, 251, 0.5);
+    padding: 1rem;
+    border-bottom: 1px solid rgb(39, 39, 39);
+    box-sizing: content-box;
+}
+
+#clube{
+    border-top: 1px solid rgb(39, 39, 39);
+}
+/* Efeito de hover nos links */
+.nvb-nav a:hover {
+    color: white;
+    background-color: rgb(15, 15, 15);
+    box-sizing: content-box;
+}
+
+/* Estilo da imagem SVG */
+.svg img {
+    position: fixed;
+    width: 25rem;
+    height: auto;
+    color: white;
+    margin: 37rem 1rem;
+    pointer-events: none; 
+    left: 50%;
+    bottom: 0;
+    margin: auto;
+    transform: translateX(-50%);
+
+}
+
+/* Classe para elementos ocultos */
+.hidden {
+    display: none;
+}
+
+/* Overlay de fundo */
+#background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor e opacidade do fundo semitransparente */
+    z-index: 4; /* Definir um z-index maior que o do vertical-navbar */
+}
+
+#dont{
+    display: none;
+}
+
+/* Estilos para telas até 700px de altura com orientação horizontal */
+@media screen and (max-height: 700px ) and (orientation: landscape) {
+
+
+    .svg{
+        display: none;
+    }
+
+    .vertical-navbar{
+        overflow-y: auto;
+    }
+}
+
+/* Estilos para telas até 390px */
+@media screen and (max-width: 390px) {
+    .vertical-navbar{
+        width: 24rem;
+    }
+    .nvb-logo a, .nvb-nav a{
+        font-size: 1.2rem !important;
+    }
+
+    .svg{
+        display: none;
+    }
+}
+
+/* Estilos para telas até 330px */
+@media screen and (max-width: 330px) {
+    .vertical-navbar{
+        width: 22rem;
+    }
+    .nvb-logo a, .nvb-nav a{
+        font-size: 1rem !important;
+    }
+}
+
+@media screen and (max-height: 400px ) and (orientation: landscape) {
+    .vertical-navbar{
+        width: 29rem !important;
+    }
+}

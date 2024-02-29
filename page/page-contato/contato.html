@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Contato</title>
+
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="style_contato_layout.css">
+		<link rel="stylesheet" href="style_contato_navbar.css">
+		<link rel="stylesheet" href="style_contato_main.css">
+		<link rel="stylesheet" href="../../CSS/style.footer-social-media.css">
+		<link rel="stylesheet" href="../../CSS/style_footer-underfoot.css">
+		<link rel="stylesheet" href="../../CSS/style.footer-nav-icon.css">
+		<link rel="stylesheet" href="../../CSS/style.navbar-vertical.css">
+		<link rel="stylesheet" href="../../CSS/style.alert.css">
+
+
+        <!-- Google Fonts -->
+      	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap">
+		<link rel="stylesheet" href="https://fonts.cdnfonts.com/css/century-schoolbook">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lugrasimo">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous">
+		
+		<!-- Font Awesome Icons-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+		<!-- Scripts -->
+		<script src="../../JS/scritp_icon.js"></script>
+		<script src="/JS/script.external_page.js"></script>
+		<script src="/JS/script_vertical.js"></script>
+		<script src="../../JS/script_form.js"></script>
+		<script src="/JS/script.clube.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+		<script src="https://kit.fontawesome.com/ab6ecfd2fd.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<!--fundo transparente-->
+		<div id="background-overlay" class="hidden"></div>
+		<!-- Seção da barra de navegação -->
+		<header class="header" id="navbar">
+			<div class="blackbox">
+				<div class="header-container">
+					 <!-- Logo -->
+					<div class="header-logo">
+						<h1>Encanto da Palavra</h1>
+						<p>Um café para amantes da literatura</p>
+					</div>
+					<!-- Navegação Principal -->
+					<nav class="main-nav">
+						<ul>
+							<li><a href = "../../page/page-cardapio/cardapio.html#us" id="sobre_nos"> Sobre Nós</a></li>
+							<li><a href = "../page-reserva/reserva.html" id="reserva"> Faça sua Reserva</a></li>
+							<li><a href = "../../page/page-eventos/eventos.html" id="eventos">Eventos</a></li>
+							<li><a href = "../../page/page-contato/contato.html" id="contato">Contato</a></li>
+							<li id="more">&#9776;</li>
+						</ul>
+					</nav>
+				</div>
+				<!-- Banner -->
+				<div class="banner-contact">
+					<!-- Área de Exibição -->
+					<div class="display">
+						<!-- Título e Descrição -->
+						<div class="title-display-contact">
+							<h1>Contato</h1>
+							<p>Em caso de dúvidas, sugestões ou feedback, entre em contato conosco pois estamos à disposição.</p>
+						</div>
+					</div>
+					<!-- Botão de Ação -->
+					<a href="#main"><nav class="nav-bottom">Mandar Mensagem</nav></a>
+					<!-- Botão de Ação 1060 -->
+					<a href="#main"><nav class="nav-bottom-1060">Mandar Mensagem</nav></a>
+				</div>
+			</div>
+			<!--Vertical Navbar -->
+			<div id="vertical-navbar-container"></div>
+		</header>
+		<!-- Conteúdo -->
+		<main class="main" id="main">
+            <div class="contact">
+                <div class="cont-right">
+					 <!-- Seção de Exibição -->
+                    <div class="show">
+                        <p>Envie-nos uma mensagem!</p>
+                    </div>
+					<!-- Formulário de Contato -->
+                    <div class="form">
+                        <form>
+							<!-- Campo Nome -->
+                            <div class="form-group" id="prime">
+                                <input type="text-name" id="fname" placeholder="Nome"  name="fname" class="form-control">
+                            </div>
+
+							 <!-- Campo Telefone -->
+                            <div class="form-group">
+                                <input type="text-telefone" id="name" placeholder="Telefone (XX) XXXXX-XXXX" name="lname" class="form-control">
+                            </div>
+                        
+							 <!-- Campo E-mail -->
+                            <div class="form-group">
+                                <input type="text-email" id="email" placeholder="E-mail"  name="E-mail" class="form-control">
+                            </div>
+                        
+							<!-- Campo Mensagem -->
+                            <div class="form-group" id="mensagem">
+                                <div class="label-container">
+                                    <label for="feedback">Sua mensagem </label>
+                                    <div class="ponto">*</div>
+                                </div>
+                                <textarea id="text-feedback" name="feedback" placeholder="Nos informe sua sugestão ou feedback." rows="10" cols="50" class="form-control"></textarea>
+                            </div>      
+							<!-- Botão Enviar -->       
+                            <div class="form-group">
+                                <input type="submit" value="Enviar" class="btn-submit">
+                            </div>
+                        </form>
+                    </div> 
+                </div> 
+       			 <!-- Informações de Contato -->
+                <div class="contact-lef">
+					<!-- Texto Complementar -->
+                    <div class="supporting-text">
+                        <h1>A sua opinião é fundamental para nós!</h1>
+                        <p>Queremos ouvir o que você pensa. Se você tem perguntas, sugestões ou feedback, estamos prontos para escutar. Sua opinião é crucial para melhorarmos nossos serviços.</p>
+                        <p>Entre em contato conosco sem hesitar. Estamos aqui para ajudar e garantir que atendemos às suas expectativas da melhor maneira possível.</p>
+                        <p>Agradecemos por escolher nossos serviços e por contribuir para o nosso aprimoramento contínuo.</p>
+                    </div>
+					<div class="information">
+					<!-- Informações de Contato Adicionais -->
+						<div class="contact-option">
+							<p>Opções de contato</p>
+						</div>
+
+						<!-- Localização -->
+						<div class="grid-item" id="local">
+							<a href="https://www.google.com/maps?q=-22.935712712871094,-42.49528605252831" target="_blank">
+								<i class="fas fa-map-marker-alt"></i></a>
+							<div class="item">
+								<h1>Localização</h1>
+								<p>Rua das Flores, n°123 Vila - Saquarema, RJ, Brasil
+							</div>
+						</div>
+
+						<!-- Telefone -->
+						<div class="grid-item" id="phone">
+							<i class="fas fa-phone"></i>
+							<div class="item">
+								<h1>Telefone</h1>
+								<p>(22) 98765-4321
+							</div>
+						</div>
+
+						<!-- E-mail -->
+						<div class="grid-item" id="email">
+							<a href="mailto:encantodapalavra@encantodapalavra.com" target="_blank">
+								<i class="fas fa-envelope"></i>
+							</a>
+							<div class="item">
+								<h1>E-mail</h1>
+								<p>encantodapalavra@encantodapalavra.com</p>
+							</div>  
+						</div>        
+					</div>
+				</div>
+			</div>		
+		</main>
+		<!--Footer-->
+		<div id="footer-container"></div>
+	</body>
+</html>

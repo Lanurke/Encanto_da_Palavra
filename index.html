@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Encanto da Palavra - Um café para amantes da literatura</title>
+	
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="/CSS/style_layout.css">
+		<link rel="stylesheet" href="/CSS/style.navbar-vertical.css">
+		<link rel="stylesheet" href="/CSS/style_navbar.css">
+		<link rel="stylesheet" href="/CSS/style_display.css">
+		<link rel="stylesheet" href="/CSS/style_main.css">
+		<link rel="stylesheet" href="/CSS/style.footer-header.css">
+		<link rel="stylesheet" href="/CSS/style_footer-underfoot.css">
+		<link rel="stylesheet" href="/CSS/style.footer-social-media.css">
+		<link rel="stylesheet" href="/CSS/style.footer-nav-icon.css">
+		<link rel="stylesheet" href="/CSS/style.alert.css">
+		<!-- Google Fonts -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap">
+		<link rel="stylesheet" href="https://fonts.cdnfonts.com/css/century-schoolbook">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lugrasimo">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap">
+	
+		<!-- Font Awesome Icons-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	
+		<!-- Scripts -->
+		<script src="/JS/script_icon.js"></script>
+		<script src="/JS/script.external_page.js"></script>
+		<script src="/JS/script_vertical.js"></script>
+		<script src="/JS/script.clube.js"></script>
+		<script src="/JS/scritp_icon.js"></script>
+		<script src="https://kit.fontawesome.com/ab6ecfd2fd.js" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	</head>
+	
+	<body>
+		<!--fundo transparente-->
+		<div id="background-overlay" class="hidden"></div>
+		<!-- Seção da barra de navegação -->
+		<header class="header" id="navbar">
+			<div class="header-container">
+				<div class="content-container">
+					 <!-- Logo -->
+					<div class="header-logo">
+						<h1>Encanto da Palavra</h1>
+						<p>Um café para amantes da literatura</p>
+					</div>
+					<!-- Navegação Principal -->
+					<nav class="main-nav">
+						<ul>
+							<li><a href = "/page/page-cardapio/cardapio.html" id="sobre_nos"> Sobre Nós</a></li>
+							<li><a href = "/page/page-reserva/reserva.html" id="reserva"> Faça sua Reserva</a></li>
+							<li><a href = "/page/page-eventos/eventos.html" id="contato">Eventos</a></li>
+							<li><a href = "/page/page-contato/contato.html" id="contato">Contato</a></li>
+							<li id="more">&#9776;</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<!--Vertical Navbar -->
+			<div id="vertical-navbar-container"></div>
+		</header>
+		<!-- Seção de Banner -->
+		<div class="banner" id="essencia">
+			<!-- Área de Exibição -->
+			<div class="display">
+				<div class="container-display">
+					<!-- Título e Descrição -->
+					<div class="title-display">
+						<h1>Descubra nossa essência</h1>
+						<p>No coração da cidade, o "Encanto da Palavra" é um refúgio para os apaixonados por histórias e aromas. Aqui, cada xícara de café é acompanhada por contos, poesias e romances.</p>
+					</div>
+					<!-- Botão de Ação -->
+					<a href="#" class="display-bottom" onclick="openModal()">Conheça o nosso Clube do Café - A Palavra</a>
+					<!-- Botão de Ação pra tela 850px -->
+					<a href="#" class="display-bottom_850" onclick="openModal()">Conheça o nosso Clube do Café - A Palavra</a>
+					<!-- Botão de Ação pra tela 415px -->
+					<a href="#" class="display-bottom_415" onclick="openModal()">Conheça o nosso Clube do Café - A Palavra</a>
+					<!-- Botão de Ação pra tela 330px -->
+					<a href="#" class="display-bottom_330" onclick="openModal()">Conheça o nosso Clube do Café - A Palavra</a>
+				</div>
+			</div>
+		</div>
+		<!-- Conteúdo -->
+		<main class="main" id="main">
+			<section class="mainbox" id="main-1">
+				<!-- Título e Descrição -->
+				<div class="mainbox-title">
+					<h1>Café e Variedade Gastronômica</h1>
+					<h1 id="link_title"><a href="page/page-cardapio/cardapio.html">Café e Variedade Gastronômica</a></h1>
+					<p>Aqui prezamos pelo o compromisso com a qualidade do café. Oferecemos uma variedade de grãos cuidadosamente selecionados, preparados por baristas experientes. Desde os clássicos expressos até as criações exclusivas da casa, cada xícara é uma experiência sensorial única. Valorizamos a jornada do café, compartilhando seu sabor e origem com nossos clientes. Além disso, contamos com uma variedade de pratos e bebidas para satisfazer seu paladar. </p>
+					<!-- Link para Leitura Adicional -->
+					<a href="page/page-cardapio/cardapio.html" class="leia_mais">Leia Mais</a>
+				</div>	
+				<!-- Contêiner do Card de Exibição -->
+				<div class="flip-container">
+					<div class="flipper">
+						<div class="front">
+							<figure>
+								<img id="imagem" src="img/2.jpg" alt="xícara de café">
+								<figcaption>Café e Variedade Gastronômica</figcaption>
+							</figure>
+						</div>
+						<!-- Verso do Card -->
+						<div class="back">
+							<div class="titulo">
+								<h1>Encanto da Palavra</h1>
+								<p>Um café para amantes da literatura</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="mainbox" id="main-2">
+				<!-- Título e Descrição -->
+				<div class="mainbox-title">
+					<h1>Um espaço para demonstrar a sua arte</h1>
+					<h1 id="link_title"><a href="page/page-eventos/eventos.html">Um espaço para demonstrar a sua arte</a></h1>
+					<p>A Encanto da Palavra estimula artistas locais a exporem suas criações, desde simples poemas até livros completos em diversos eventos ao longo do ano. Vamos além de simples exposições;  proporcionamos experiências imersivas onde as palavras ganham vida através de lançamentos exclusivos.  Ao colaborar com escritores locais, oferecemos oportunidades para que compartilhem não apenas suas criações, mas também as histórias por trás de cada palavra. Nosso compromisso vai além do suporte à produção artística; buscamos construir uma comunidade que valoriza a diversidade de expressões e promove a interação entre escritores e leitores. </p>
+					<!-- Link para Leitura Adicional -->
+					<a href="page/page-eventos/eventos.html" class="leia_mais">Leia Mais</a>
+				</div>
+				<!-- Contêiner do Card de Exibição -->
+				<div class="flip-container">
+					<div class="flipper">
+						<div class="front">
+							<figure>
+								<img id="imagem" src="img/2.png" alt="xícara de café">
+								<figcaption>Atmosfera Aconchegante e Literária</figcaption>
+							</figure>
+						</div>
+						<!-- Verso do Card -->
+						<div class="back">
+							<div class="titulo">
+								<h1>Encanto da Palavra</h1>
+								<p>Um espaço para demonstrar a sua arte</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="mainbox" id="main-3">
+				<!-- Título e Descrição -->
+				<div class="mainbox-title">
+					<h1>Saraus & Lançamentos</h1>
+					<h1 id="link_title"><a href="page/page-eventos/eventos.html">Saraus & Lançamentos</a></h1>
+					<p>Todo mês, autores locais compartilham suas histórias, poesias e debatem literatura. É um momento único de celebração da expressão artística e exploração de novas narrativas. Nossos saraus são eventos especiais, onde a magia das palavras ganha vida. Autores talentosos lançam seus trabalhos mais recentes, mergulhando em conversas fascinantes sobre literatura. Se você é apaixonado por livros, poesias ou apenas deseja se perder em uma noite de palavras bem tecidas, nossos saraus são o lugar perfeito. Confira nossa agenda e junte-se a nós em uma jornada literária única.</p>
+					<!-- Link para Leitura Adicional -->
+					<a href="/page/page-eventos/eventos.html" class="leia_mais">Leia Mais</a>
+				</div>
+				<!-- Contêiner do Card de Exibição -->
+				<div class="flip-container">
+					<div class="flipper">
+						<div class="front">
+							<figure>
+								<img id="imagem" src="img/sarau.png" alt="xícara de café">
+								<figcaption>Saraus & Lançamentos</figcaption>
+							</figure>
+						</div>
+						<!-- Verso do Card -->
+						<div class="back">
+							<div class="titulo">
+								<h1>Encanto da Palavra</h1>
+								<p>Um café para amantes da literatura</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="mainbox" id="main-4">
+				<!-- Título e Descrição -->
+				<div class="mainbox-title">
+					<h1>Degustação Lirerária</h1>
+					<h1 id="link_title"><a href="page/page-eventos/eventos.html">Degustação Lirerária</a></h1>
+					<p>Em nossos eventos de degustação literária em "Encanto da Palavra", convidamos clientes a explorar sabores de café enquanto folheiam livros em nossas estantes. Cada xícara se torna uma jornada literária, a escolha de um livro é uma experiência pessoal. A harmonia de aromas de cafés refinados e narrativas cria um ambiente que celebra a cultura literária. Em "Nossa Palavra", essa experiência é uma celebração do prazer do café e da riqueza das palavras. Venha, descubra e desfrute de histórias memoráveis.</p>
+					<!-- Link para Leitura Adicional -->
+					<a href="page/page-eventos/eventos.html" class="leia_mais">Leia Mais</a>
+				</div>	
+				<!-- Contêiner do Card de Exibição -->
+				<div class="flip-container">
+					<div class="flipper">
+						<div class="front">
+							<figure>
+								<img id="imagem" src="img/desgust.jpg" alt="xícara de café">
+								<figcaption>Degustação Literária</figcaption>
+							</figure>
+						</div>
+						<div class="back">
+							<div class="titulo">
+								<h1>Encanto da Palavra</h1>
+								<p>Um café para amantes da literatura</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>			
+		</main>
+		<!--Footer-->
+		<div id="footer-container"></div>
+	</body>
+</html>

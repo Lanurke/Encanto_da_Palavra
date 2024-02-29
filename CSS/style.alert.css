@@ -1,0 +1,94 @@
+.custom-swal-popup {
+    background-color: #3D1E11;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    border: 2px solid #CF9551;
+    border-radius: 1rem;
+    width: 60rem;
+    font-family: 'Merriweather', sans-serif;
+}
+
+.custom-swal-title {
+    color: #CF9551;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.custom-swal-text {
+    color: #CF9551;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.custom-swal-confirm-button {
+    background-color: #ddbb00 !important;
+    color: #1A1C1D !important;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -15px 2px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    font-size: 2.5rem;
+}
+
+.custom-icon::before {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+}
+
+/* Estilos para telas até 1060x */
+@media screen and (max-width: 1060px ) {
+    .custom-swal-popup {
+       transform: scale(0.95);
+       width: 49rem;
+
+    }
+
+    .custom-swal-title {
+        margin-bottom: 0.9rem !important;
+        font-size: 2.6rem;
+    }
+
+    .custom-swal-text{
+        margin-bottom: 1.9rem !important;
+        font-size: 1.6rem !important;
+    }
+
+}
+
+/* Estilos para telas até 600x */
+@media screen and (max-width: 600px ) {
+    .custom-swal-popup {
+        transform: scale(0.85);
+        width:41rem;
+
+    }
+
+    .custom-swal-title {
+        margin-bottom: 0.6rem !important;
+        font-size: 2rem;
+    }
+
+    .custom-swal-text{
+        margin-bottom: 1rem !important;
+        font-size: 1rem;
+    }
+}
+
+/* Estilos para telas até 600x */
+@media screen and (max-width: 330px ) {
+    .custom-swal-popup {
+        transform: scale(0.85);
+        width:41rem;
+    }
+
+    .custom-swal-title {
+        margin-bottom: 0.1rem !important;
+        font-size: 1.8rem;
+    }
+
+    .custom-swal-text{
+        margin-bottom: 0.5rem !important;
+        font-size: 1.2rem !important;
+    }
+}

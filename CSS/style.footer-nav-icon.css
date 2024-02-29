@@ -1,0 +1,210 @@
+/* Estilos para o ícone da home */
+.nav-page{
+    position: relative;
+    z-index: 5;
+}
+
+.home i {
+    position: fixed;
+    bottom: 2rem;
+    left: 2.3rem;
+    width: 2rem; /* Tamanho fixo para largura e altura */
+    height: 2rem;
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 2px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    font-size: 2.6rem;
+    background-color: yellow;  
+}
+
+/* Efeito de clique para o ícone da home */
+.home i:active {
+    transform: scale(0.8);
+    transition: transform 0.1s ease;
+}
+
+/* Estilo para link da home */
+.home a {
+    text-decoration: none;
+}
+
+/* Elemento da home */
+.home {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-in-out, visibility 0s linear 1s;
+}
+
+/* Classe para tornar visível */
+.visivel {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1s ease-in-out, visibility 0s linear 0s;
+}
+
+/* Estilos para o ícone do WhatsApp */
+.whatsapp span {
+    position: fixed;
+    bottom: 2rem;
+    right: 2.5rem;
+    width: 2rem; /* Tamanho fixo para largura e altura */
+    height: 2rem;
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 2px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    font-size: 2.6rem;
+    background-color: yellow;
+    
+}
+
+/* Efeito de clique para o ícone do WhatsApp */
+.whatsapp span:active {
+    transform: scale(0.8);
+    transition: transform 0.1s ease;
+}
+
+/* Estilos para o complemento do WhatsApp */
+.whatsapp span,
+.whatsapp .complemento {
+    transition: background-color 1s ease;
+}
+
+/* Efeito de hover para o ícone do WhatsApp e seu complemento */
+.whatsapp span:hover,
+.whatsapp:hover .complemento {
+    background-color: #25d366;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 2px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+/* Estilos para o complemento do WhatsApp */
+.whatsapp .complemento {
+    opacity: 0;
+    position: fixed;
+    right: 2.5rem;
+    bottom: 3rem;
+    z-index: 1;
+    color: #ffffff;
+    padding: 0.6rem 1.4rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 2.5rem;
+    pointer-events: none;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 2px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    transition: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    text-align: center;
+}
+
+/* Efeito de hover para o complemento do WhatsApp */
+.whatsapp:hover .complemento {
+    right: 10rem;
+    opacity: 1;
+    pointer-events: auto;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+/* Ocultação inicial do ícone do WhatsApp */
+.whatsapp {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-in-out, visibility 0s linear 1s;
+}
+
+/* Classe para mostrar o ícone do WhatsApp */
+.whatsapp.mostrar {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1s ease-in-out, visibility 0s linear 0s;
+}
+
+
+@media screen and (max-width: 1600px) {
+    .home i, .whatsapp span, .complemento {
+       transform: scale(0.95) !important;
+    }
+
+    .whatsapp:hover .complemento {
+        right: 9rem !important;
+}
+}
+
+@media screen and (max-width: 750px) {
+    .home i, .whatsapp span{
+        bottom: 1rem !important;
+    }
+
+    .whatsapp .complemento{
+        bottom: 2rem !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .home i, .whatsapp span, .complemento {
+       transform: scale(0.8) !important;
+    }
+
+    .whatsapp:hover .complemento {
+        right: 6rem !important;
+    }
+    .home i {
+        left: 2rem;
+    }
+    .whatsapp span{
+        right: 2rem;
+    }
+    .home i, .whatsapp span{
+        bottom: 0.5rem !important;
+    }
+
+    .whatsapp .complemento{
+        bottom: 1.5rem !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .home i, .whatsapp span, .complemento {
+       transform: scale(0.7) !important;
+    }
+    .whatsapp:hover .complemento {
+        right: 4.5rem !important;
+    }
+    .home i {
+        left: 1.7rem;
+    }
+
+    .whatsapp span{
+        right: 1.7rem;
+    }
+
+    .whatsapp .complemento{
+        bottom: 1.5rem !important;
+    }
+
+}
+@media screen and (max-width: 330px) {
+    .home i, .whatsapp span, .complemento {
+       transform: scale(0.7) !important;
+    }
+
+    .home i {
+        left: 1.25rem !important;
+    }
+
+    .whatsapp span{
+        right: 1.25rem;
+    }
+
+    .whatsapp .complemento{
+        right: 10rem !important
+    }
+}

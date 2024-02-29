@@ -1,0 +1,430 @@
+/* Estilos do contêiner principal */
+.wrapper {
+    width: 32rem;
+    height: 56rem;
+    position: relative;
+    box-sizing: content-box;
+    overflow: hidden;
+}
+
+/* Estilos do card frontal */
+.card {
+    display: flex;
+    flex-direction: column;
+    border: solid 0.2rem rgba(0, 0, 0, 0.534);
+    z-index: 2;
+    background: radial-gradient(circle, rgba(44, 45, 48, 1) 0%, rgba(0, 2, 6, 1) 100%);
+    overflow: hidden;
+}
+
+/* Estilos do contêiner de imagem no card frontal */
+.card .container-img {
+    width: 32rem;
+    height: 32rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100%;
+}
+
+/* Estilos da imagem no card frontal */
+.card .container-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    box-shadow: -3px -3px 20px rgb(5, 5, 5),
+        3px 3px 20px rgb(8, 8, 8);
+    object-fit: cover;
+}
+
+/* Estilos do título no card frontal */
+.title {
+    border-top: solid 0.1rem rgba(0, 0, 0, 0.534);
+    border-bottom: solid 0.1rem rgba(0, 0, 0, 0.534);
+    height: 4rem;
+    display: flex;
+    place-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    background-color: #cbab61;
+    font-family: 'lugrasimo';
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 2px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+        rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+        rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+/* Estilos do subtítulo no card frontal */
+.subtitle {
+    height: 11rem;
+    font-size: 1.5rem;
+    color: rgba(252, 251, 251, 0.5);
+    font-family: 'lugrasimo';
+    text-align: center;
+    margin-top: 1.2rem;
+}
+
+.subtitle p{
+    line-height: 2.5;
+}
+
+
+/* Estilos para o nome no card frontal */
+#name {
+    color: white;
+}
+
+/* Estilos para data e hora no card frontal */
+#date,
+#hour {
+    font-family: 'montserrat';
+}
+
+/* Estilos do contêiner de botões no card frontal */
+.container-button_1, .container-button_2, .container-button_3, .container-button_4,
+.container-button_5, .container-button_6, .container-button_7, .container-button_8,
+.container-button_9, .container-button_10, .container-button_11, .container-button_12,
+.container-button_13, .container-button_14, .container-button_15, .container-button_16,
+.container-button_17, .container-button_18, .container-button_19, .container-button_20 {
+    height: 6.2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos dos botões no card frontal */
+.font_btn_1, .font_btn_2, .font_btn_3, .font_btn_4,
+.font_btn_5, .font_btn_6, .font_btn_7, .font_btn_8,
+.font_btn_9, .font_btn_10, .font_btn_11, .font_btn_12,
+.font_btn_13, .font_btn_14, .font_btn_15, .font_btn_16,
+.font_btn_17, .font_btn_18, .font_btn_19, .font_btn_20,
+.back_btn_1, .back_btn_2, .back_btn_3, .back_btn_4,
+.back_btn_5, .back_btn_6, .back_btn_7, .back_btn_8,
+.back_btn_9, .back_btn_10, .back_btn_11, .back_btn_12,
+.back_btn_13, .back_btn_14, .back_btn_15, .back_btn_16,
+.back_btn_17, .back_btn_18, .back_btn_19, .back_btn_20 {
+    padding: 1rem 3rem;
+    background-color: #6d6a5e;
+    color: rgba(252, 251, 251, 0.5);
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-shadow: 3px 3px 7px black;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 2px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+        rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+        rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    font-family: 'poppins';
+    border: none;
+    display: block;
+    transition: background-color 0.5s, color 0.5s;    
+}
+
+/* Efeitos de clique nos botões no card frontal e traseiro */
+.font_btn_1:active, .font_btn_2:active, .font_btn_3:active, .font_btn_4:active,
+.font_btn_5:active, .font_btn_6:active, .font_btn_7:active, .font_btn_8:active,
+.font_btn_9:active, .font_btn_10:active, .font_btn_11:active, .font_btn_12:active,
+.font_btn_13:active, .font_btn_14:active, .font_btn_15:active, .font_btn_16:active,
+.font_btn_17:active, .font_btn_18:active, .font_btn_19:active, .font_btn_20:active,
+.back_btn_1:active, .back_btn_2:active, .back_btn_3:active, .back_btn_4:active,
+.back_btn_5:active, .back_btn_6:active, .back_btn_7:active, .back_btn_8:active,
+.back_btn_9:active, .back_btn_10:active, .back_btn_11:active, .back_btn_12:active,
+.back_btn_17:active, .back_btn_18:active, .back_btn_19:active, .back_btn_20:active {
+    transform: scale(0.9);
+}
+
+/* Efeitos de hover nos botões no card frontal e traseiro */
+.font_btn_1:hover, .font_btn_2:hover, .font_btn_3:hover, .font_btn_4:hover,
+.font_btn_5:hover, .font_btn_6:hover, .font_btn_7:hover, .font_btn_8:hover,
+.font_btn_9:hover, .font_btn_10:hover, .font_btn_11:hover, .font_btn_12:hover,
+.font_btn_13:hover, .font_btn_14:hover, .font_btn_15:hover, .font_btn_16:hover,
+.font_btn_17:hover, .font_btn_18:hover, .font_btn_19:hover, .font_btn_20:hover,
+.back_btn_1:hover, .back_btn_2:hover, .back_btn_3:hover, .back_btn_4:hover,
+.back_btn_5:hover, .back_btn_6:hover, .back_btn_7:hover, .back_btn_8:hover,
+.back_btn_9:hover, .back_btn_10:hover, .back_btn_11:hover, .back_btn_12:hover,
+.back_btn_13:hover, .back_btn_14:hover, .back_btn_15:hover, .back_btn_16:hover,
+.back_btn_17:hover, .back_btn_18:hover, .back_btn_19:hover, .back_btn_20:hover {
+    background-color: #cbab61;
+    color: white;
+}
+
+
+/* Estilos do contêiner principal quando expandido */
+.container-main {
+    background: radial-gradient(circle, rgba(44, 45, 48, 1) 0%, rgba(23, 25, 28, 1) 71%, rgba(0, 2, 6, 1) 100%);
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 1s ease, visibility 1s linear 0.3s, height 1s ease; 
+}
+
+/* Efeito de expansão ao passar o mouse sobre o card frontal */
+.card:hover .container-main {
+    opacity: 1;
+    visibility: visible;
+    height: 20rem;
+    transition: opacity 1s ease, visibility 1s linear 0s, height 1s ease;
+}
+
+/* Estilos do card traseiro */
+.card_details_1, .card_details_2, .card_details_3, .card_details_4,
+.card_details_5, .card_details_6, .card_details_7, .card_details_8,
+.card_details_9, .card_details_10, .card_details_11, .card_details_12,
+.card_details_13, .card_details_14, .card_details_15, .card_details_16,
+.card_details_17, .card_details_18, .card_details_19, .card_details_20 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 56rem;
+    border: solid 2px rgba(0, 0, 0, 0.534);
+    z-index: 1;
+    background: radial-gradient(circle, rgba(44, 45, 48, 1) 0%, rgba(0, 2, 6, 1) 100%);
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-100%);
+    transition: transform 1s ease-out;
+}
+
+/* Estilos do texto no card traseiro */
+.text-details {
+    padding: 0;
+    height: 48.5rem;
+}
+
+/* Estilos do título no card traseiro */
+.top h1 {
+    font-size: 2rem;
+    border-top: solid 1px rgba(0, 0, 0, 0.534);
+    border-bottom: solid 1px rgba(0, 0, 0, 0.534);
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    place-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    background-color: #cbab61;
+    font-family: 'lugrasimo';
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 2px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+        rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+        rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+/* Estilos dos parágrafos no card traseiro */
+.top p,
+.under p {
+    color: rgba(252, 251, 251, 0.5);
+    font-size: 1.3rem;
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Estilos do contêiner inferior no card traseiro */
+.under {
+    max-width: 85.51%;
+    margin: 3rem auto;
+    box-sizing: border-box;  
+}
+
+/* Estilos do parágrafo no contêiner inferior do card traseiro */
+.under p {
+    text-align: center;
+    border-bottom: 0.1rem solid rgba(252, 251, 251, 0.5);
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;  
+}
+
+/* Estilo aplicado ao card traseiro quando está aberto */
+.card_details_1.open, .card_details_2.open, .card_details_3.open, .card_details_4.open,
+.card_details_5.open, .card_details_6.open, .card_details_7.open, .card_details_8.open,
+.card_details_9.open, .card_details_10.open, .card_details_11.open, .card_details_12.open,
+.card_details_13.open, .card_details_14.open, .card_details_15.open, .card_details_16.open,
+.card_details_17.open, .card_details_18.open, .card_details_19.open, .card_details_20.open {
+    transform: translateX(0);
+}
+
+
+
+  /* Estilos para telas até 420px */
+  @media screen and (max-width: 420px) {
+    .container-img{
+        cursor: pointer;
+    }
+  }
+  /* Estilos para telas até 420px */
+  @media screen and (max-width: 420px) {
+    .wrapper {
+        width: 28rem !important;
+        height: 48rem !important;
+    }
+
+
+    .card .container-img{
+        width: 28rem !important;
+        height: 28rem !important;
+    }
+    .title{
+        font-size: 1rem !important;
+        height: 3.5rem !important;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -19px 2px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+        rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+        rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
+
+    .subtitle{
+        font-size: 1.2rem !important;
+    }
+
+    .container-button_1, .container-button_2, .container-button_3, .container-button_4,
+    .container-button_5, .container-button_6, .container-button_7, .container-button_8,
+    .container-button_9, .container-button_10, .container-button_11, .container-button_12,
+    .container-button_13, .container-button_14, .container-button_15, .container-button_16,
+    .container-button_17, .container-button_18, .container-button_19, .container-button_20 {
+        height: 1rem !important;
+
+    }
+    .font_btn_1, .font_btn_2, .font_btn_3, .font_btn_4,
+    .font_btn_5, .font_btn_6, .font_btn_7, .font_btn_8,
+    .font_btn_9, .font_btn_10, .font_btn_11, .font_btn_12,
+    .font_btn_13, .font_btn_14, .font_btn_15, .font_btn_16,
+    .font_btn_17, .font_btn_18, .font_btn_19, .font_btn_20,
+    .back_btn_1, .back_btn_2, .back_btn_3, .back_btn_4,
+    .back_btn_5, .back_btn_6, .back_btn_7, .back_btn_8,
+    .back_btn_9, .back_btn_10, .back_btn_11, .back_btn_12,
+    .back_btn_13, .back_btn_14, .back_btn_15, .back_btn_16,
+    .back_btn_17, .back_btn_18, .back_btn_19, .back_btn_20 {
+        padding: 0.8rem 2rem !important;
+        font-size: 1.3rem !important;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -19px 2px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+        rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+        rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
+
+    .back_btn_1, .back_btn_2, .back_btn_3, .back_btn_4,
+    .back_btn_5, .back_btn_6, .back_btn_7, .back_btn_8,
+    .back_btn_9, .back_btn_10, .back_btn_11, .back_btn_12,
+    .back_btn_13, .back_btn_14, .back_btn_15, .back_btn_16,
+    .back_btn_17, .back_btn_18, .back_btn_19, .back_btn_20{
+        margin-top: -5.3rem !important;
+    }
+
+    .card_details_1, .card_details_2, .card_details_3, .card_details_4,
+    .card_details_5, .card_details_6, .card_details_7, .card_details_8,
+    .card_details_9, .card_details_10, .card_details_11, .card_details_12,
+    .card_details_13, .card_details_14, .card_details_15, .card_details_16,
+    .card_details_17, .card_details_18, .card_details_19, .card_details_20 {
+        height: 47.6rem !important;
+    }
+
+    .top h1{
+        font-size: 1.3rem !important;
+        height: 3.5rem !important;
+    }
+    
+    .top p,
+    .under p {
+        font-size: 1.1rem !important;
+        margin-bottom: 1rem !important;
+       
+    }
+
+    .under{
+        margin: 2rem auto !important;
+    }
+
+}
+
+  /* Estilos para telas até 360px */
+  @media screen and (max-width: 360px) {
+    .wrapper {
+        width: 24rem !important;
+        height: 42rem !important;
+    }
+
+    .card .container-img{
+        width: 24rem !important;
+        height: 24rem !important;
+    }
+    .title{
+        font-size: 0.9rem !important;
+        height: 3rem !important;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -16px 2px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+        rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+        rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
+
+    .container-button_1, .container-button_2, .container-button_3, .container-button_4,
+    .container-button_5, .container-button_6, .container-button_7, .container-button_8,
+    .container-button_9, .container-button_10, .container-button_11, .container-button_12,
+    .container-button_13, .container-button_14, .container-button_15, .container-button_16,
+    .container-button_17, .container-button_18, .container-button_19, .container-button_20 {
+        height: 0 !important;
+    }
+    
+    .font_btn_1, .font_btn_2, .font_btn_3, .font_btn_4,
+    .font_btn_5, .font_btn_6, .font_btn_7, .font_btn_8,
+    .font_btn_9, .font_btn_10, .font_btn_11, .font_btn_12,
+    .font_btn_13, .font_btn_14, .font_btn_15, .font_btn_16,
+    .font_btn_17, .font_btn_18, .font_btn_19, .font_btn_20,
+    .back_btn_1, .back_btn_2, .back_btn_3, .back_btn_4,
+    .back_btn_5, .back_btn_6, .back_btn_7, .back_btn_8,
+    .back_btn_9, .back_btn_10, .back_btn_11, .back_btn_12,
+    .back_btn_13, .back_btn_14, .back_btn_15, .back_btn_16,
+    .back_btn_17, .back_btn_18, .back_btn_19, .back_btn_20 {
+        padding: 0.6rem 1.5rem !important;
+        font-size: 1rem !important;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -15px 2px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+        rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+        rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        
+    }
+
+    .back_btn_1, .back_btn_2, .back_btn_3, .back_btn_4,
+    .back_btn_5, .back_btn_6, .back_btn_7, .back_btn_8,
+    .back_btn_9, .back_btn_10, .back_btn_11, .back_btn_12,
+    .back_btn_13, .back_btn_14, .back_btn_15, .back_btn_16,
+    .back_btn_17, .back_btn_18, .back_btn_19, .back_btn_20{
+        margin-top: -5.4rem !important;
+    }
+
+    .card_details_1, .card_details_2, .card_details_3, .card_details_4,
+    .card_details_5, .card_details_6, .card_details_7, .card_details_8,
+    .card_details_9, .card_details_10, .card_details_11, .card_details_12,
+    .card_details_13, .card_details_14, .card_details_15, .card_details_16,
+    .card_details_17, .card_details_18, .card_details_19, .card_details_20 {
+        height: 42rem !important;
+    }
+
+    .top h1{
+        font-size: 1.2rem !important;
+        height: 3rem !important;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -17px 2px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+        rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+        rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
+    
+    .top p,
+    .under p {
+        font-size: 0.95rem !important;
+        margin-bottom: 1rem !important;
+       
+    }
+
+    .under{
+        margin: 2rem auto !important;
+    }
+
+
+}
+

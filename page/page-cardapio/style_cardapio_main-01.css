@@ -1,0 +1,544 @@
+/* Estilos para a seção do Cardápio Geral */
+.general-menu {
+  max-width: 155rem;
+  height: auto;
+  margin: 10rem auto;
+  border-radius: 5rem;
+  box-sizing: border-box;
+}
+
+/* Estilos para o cabeçalho do Cardápio Geral */
+.menu {
+  padding: 1rem;
+  border: solid #CF9551;
+  border-radius: 5rem;
+  margin: 2rem auto;
+  background-color: #3D1E11;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 90%;
+}
+
+.menu h1 {
+  font-size: 5rem;
+  font-family: 'alex brush';
+  color: #CF9551;
+  display: flex;
+  align-items: center;
+  }
+
+.menu img {
+  height: 8rem;
+  width: auto;
+}
+
+/* Estilos para o container dos itens do menu */
+.container-menu {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr); /* Atualizado para quatro colunas */
+  height: 100%;
+  gap: 2.5rem;
+  padding: 2.5rem;
+  max-width: 90%;
+  margin: auto;
+}
+
+/* Estilos para os links do menu */
+.container-menu a {
+  text-decoration: none;
+}
+
+/* Estilos para os itens individuais do menu */
+.general-menu-1,
+.general-menu-2,
+.general-menu-3,
+.general-menu-4,
+.general-menu-5,
+.general-menu-6,
+.general-menu-7,
+.general-menu-8 {
+  border: solid 0.4rem #CF9551;
+  background-color: #3D1E11;
+  border-radius: 5rem;
+  height: 30rem;
+  width: 30rem;
+  margin: auto;
+  justify-self: center; /* Centralizar horizontalmente */
+  cursor: pointer;
+  transition: background-color 0.5s, scale 0.5s;
+}
+
+/* Efeitos de hover para os itens do menu */
+.general-menu-1:hover,
+.general-menu-2:hover,
+.general-menu-3:hover,
+.general-menu-4:hover,
+.general-menu-5:hover,
+.general-menu-6:hover,
+.general-menu-7:hover,
+.general-menu-8:hover {
+  background-color: #E7DFD7; /* Cor de fundo ao passar o mouse */
+  transition: 0.5s ease;
+  scale: 0.9;
+}
+
+/* Estilos para os contêineres dos itens do menu */
+.box-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Estilos para as figuras dos itens do menu */
+.figure-1,
+.figure-2,
+.figure-3,
+.figure-4,
+.figure-6,
+.figure-7,
+.figure-8 {
+  height: 20rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.figure-5{
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilos para as imagens das figuras dos itens do menu */
+.figure-1 img {
+  width: 15rem;
+  height: auto;
+  margin: auto;
+}
+
+.figure-2 img {
+  width: 10rem;
+  height: auto;
+  margin: auto;
+}
+
+.figure-3 img {
+  width: 22rem;
+  height: auto;
+  margin: auto;
+}
+
+.figure-4 img {
+  width: 26rem;
+  height: auto;
+  margin: auto;
+}
+
+.figure-5 img {
+  width: 15rem;
+  height: auto;
+  margin-left: 25%;
+}
+
+.figure-6 img {
+  width: 15rem;
+  height: auto;
+  margin: auto;
+}
+
+.figure-7 img {
+  width: 25rem;
+  height: auto;
+  margin: auto;
+}
+
+.figure-8 img {
+  width: 25rem;
+  height: auto;
+  margin: auto;
+}
+
+/* Estilos para as legendas dos itens do menu */
+.caption p {
+  font-size: 5rem;
+  font-family: 'alex brush';
+  color: #CF9551;
+  
+}
+
+/*Estilos para telas entre 1201px até 1500px*/
+@media only screen and (min-width: 1201px) and (max-width: 1500px) {
+  .general-menu {
+    margin: 6.66vw auto ;
+  }
+  .general-menu-1,
+  .general-menu-2,
+  .general-menu-3,
+  .general-menu-4,
+  .general-menu-5,
+  .general-menu-6,
+  .general-menu-7,
+  .general-menu-8 {
+    height: 20vw   !important;
+    width: 20vw !important;
+    border-radius: 3.33vw;
+  }
+
+  .figure-1 img {
+    width: 10vw;
+  }
+  
+  .figure-2 img {
+    width: 6.67vw;
+  }
+  
+  .figure-3 img {
+    width: 14.67vw;
+
+  }
+  
+  .figure-4 img {
+    width: 17.33vw;
+  }
+  
+  .figure-5 img {
+    width: 10vw;
+    margin-left: 25%;
+  }
+  
+  .figure-6 img {
+    width: 10vw;
+  }
+  
+  .figure-7 img {
+    width: 16.67vw;
+  }
+  
+  .figure-8 img {
+    width: 16.67vw;
+  }
+
+.figure-1,
+.figure-2,
+.figure-3,
+.figure-4,
+.figure-5,
+.figure-6,
+.figure-7,
+.figure-8 {
+  height: 13.33vw
+}
+
+.caption p{
+  font-size: 3.33vw !important;
+}
+
+.menu {
+  padding: 0.67vw;
+  border-radius: 3.33vw;
+  margin: 1.33vw auto;
+}
+
+.menu h1 {
+  font-size: 3.33vw;
+}
+
+.menu img {
+  height: 5.33vw;
+}
+} 
+
+/*Estilos para telas de até 1200x*/
+@media screen and (max-width: 1200px) {
+  .general-menu {
+    margin: 6.66vw auto
+  }
+  .container-menu {
+  grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  }
+
+/*Estilos para telas de até 1100px*/
+@media  only screen and (min-width: 850px) and (max-width: 1100px) {
+  .general-menu-1,
+.general-menu-2,
+.general-menu-3,
+.general-menu-4,
+.general-menu-5,
+.general-menu-6,
+.general-menu-7,
+.general-menu-8 {
+    border-radius: 4.55vw !important;
+    height: 27.27vw !important;
+    width: 27.27vw !important;
+}
+
+.figure-1 img {
+    width: 13.64vw;
+}
+
+.figure-2 img {
+    width: 9.09vw;
+}
+
+.figure-3 img {
+    width: 20vw;
+}
+
+.figure-4 img {
+    width: 23.64vw;
+}
+
+.figure-5 img {
+    width: 13.64vw;
+}
+
+.figure-6 img {
+    width: 13.64vw;
+}
+
+.figure-7 img {
+    width: 22.73vw;
+}
+
+.figure-8 img {
+    width: 22.73vw;
+}
+
+.figure-1,
+.figure-2,
+.figure-3,
+.figure-4,
+.figure-5,
+.figure-6,
+.figure-7,
+.figure-8 {
+    height: 18.18vw;
+}
+
+.caption p {
+    font-size: 4.55vw !important;
+}
+
+.menu {
+  padding: 0.91vw;
+  border-radius: 4.55vw;
+  margin: 1.82vw auto;
+}
+
+.menu h1 {
+  font-size: 4.55vw;
+}
+
+.menu img {
+  height: 7.27vw;
+}
+
+} 
+
+/*Estilos para telas de até 849px*/
+@media screen and (max-width: 849px) {
+.container-menu{
+  grid-template-columns: repeat(2, 1fr) !important;
+}
+.menu img{
+  display: none;
+  
+}
+
+}
+
+/*Estilos para telas de até 740px*/
+@media screen and (max-width: 740px) {
+  .general-menu-1,
+.general-menu-2,
+.general-menu-3,
+.general-menu-4,
+.general-menu-5,
+.general-menu-6,
+.general-menu-7,
+.general-menu-8 {
+    border-radius: 6.76vw;
+    height: 40.54vw;
+    width: 40.54vw;
+}
+
+.figure-1 img,
+.figure-5 img,
+.figure-6 img {
+    width: 20.27vw;
+}
+
+.figure-2 img {
+    width: 13.51vw;
+}
+
+.figure-3 img {
+    width: 29.73vw;
+}
+
+.figure-4 img {
+    width: 35.14vw;
+}
+
+.figure-7 img,
+.figure-8 img {
+    width: 33.78vw;
+}
+
+.figure-1,
+.figure-2,
+.figure-3,
+.figure-4,
+.figure-5,
+.figure-6,
+.figure-7,
+.figure-8 {
+    height: 27.03vw;
+}
+
+.caption p {
+    font-size: 6.76vw;
+}
+
+.menu {
+  padding: 1.35vw;
+  border-radius: 6.76vw;
+  margin: 2.70vw auto;
+}
+
+.menu h1 {
+  font-size: 6.76vw;
+}
+
+}
+
+/*Estilos para telas de até 626px*/
+@media screen and (max-width: 626px) {
+  .container-menu{
+    gap: 2.5vw !important;
+    padding: 2vw !important;
+  }
+}
+
+/*Estilos para telas de até 555px*/
+@media screen and (max-width: 555px) {
+
+.figure-1 img,
+.figure-5 img,
+.figure-6 img {
+    width: 18.27vw;   
+}
+
+.figure-2 img {
+    width: 11.51vw;
+}
+
+.figure-3 img {
+    width: 27.73vw;
+}
+
+.figure-4 img {
+    width: 33.14vw;
+}
+
+.figure-7 img,
+.figure-8 img  {
+    width: 31.78vw;
+}
+
+  .caption p {
+    font-size: 6.2vw;
+}
+
+}
+
+/*Estilos para telas de até 500px*/
+@media screen and (max-width: 500px) {
+  .figure-1,
+  .figure-2,
+  .figure-3,
+  .figure-5,
+  .figure-4,
+  .figure-6,
+  .figure-7,
+  .figure-8 {
+    height: 26.03vw
+  }
+
+}
+
+/*Estilos para telas de até 400px*/
+@media screen and (max-width: 400px) {
+.figure-1 img,
+.figure-5 img,
+.figure-6 img {
+    width: 17.27vw;
+        
+}
+
+.figure-2 img {
+    width: 10.51vw;
+}
+
+.figure-3 img {
+    width: 26.73vw;
+}
+
+.figure-4 img {
+    width: 32.14vw;
+}
+
+.figure-7 img,
+.figure-8 img  {
+    width: 30.78vw;
+}
+
+  .caption p {
+    font-size: 6vw;
+}
+
+}
+
+/*Estilos para telas de até 370px*/
+@media screen and (max-width: 370px) {
+.figure-1 img,
+.figure-5 img,
+.figure-6 img {
+    width: 16.27vw;
+        
+}
+
+.figure-2 img {
+    width: 9.51vw;
+}
+
+.figure-3 img {
+    width: 25.73vw;
+}
+
+.figure-4 img {
+    width: 31.14vw;
+}
+
+.figure-7 img,
+.figure-8 img  {
+    width: 29.78vw;
+}
+
+  .caption p {
+    font-size: 5.8vw;
+}
+}
+
+/*Estilos para telas de até 355px*/
+@media screen and (max-width: 335px) {
+  .caption p{
+    font-size: 5.6vw ;
+  }
+}

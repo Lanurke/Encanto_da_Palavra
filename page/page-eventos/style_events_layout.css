@@ -1,0 +1,92 @@
+/* Reset de margens e preenchimentos para todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Configurações básicas para o elemento HTML */
+html {
+  font-size: 10px;
+  background: #1a1c1d;
+  font-family: 'poppins';
+  color: #1a1c1d;
+  line-height: 1.5;
+}
+
+/* Definições de layout da grade (grid) */
+.header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main main main main main main'
+    'footer footer footer footer footer footer ';
+}
+
+/* Espaçamento e tamanho do texto para elementos filhos da grade */
+.grid-container > * {
+  padding: 2rem 0;
+  font-size: 3rem;
+  box-sizing: content-box;
+}
+
+/* Estilos para a área do cabeçalho */
+.header {
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(../../img/header-back.png);
+  background-size: cover;
+  background-position: bottom;
+  box-sizing: border-box;
+  box-shadow: 1px 5px 10px black;
+}
+
+/* Estilos para a área principal*/
+.main {
+  height: 100%;
+  width: 95%;
+  margin: 5rem auto;
+  padding: 5rem;
+  border-top-left-radius: 5rem;
+  border-top-right-radius: 5rem;
+  background-color: #E7DFD7;
+  box-shadow: 1px 1px 10px black, 1px -1px 10px black;
+  box-sizing: border-box;
+  border: #1a1c1d solid 0.6rem;
+  color: #191a1b;
+  font-family: 'lugrasimo';
+}
+
+/* Estilos para a área do rodapé*/
+.footer {
+  padding: 0;
+  color: white;
+  height: 30rem;
+  background-image: url(/img/footer.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+@media screen and (max-width: 315px) {
+  body{
+    overflow-x: hidden;
+  }
+
+  
+  
+}

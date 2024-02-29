@@ -1,0 +1,409 @@
+/* Estilos para a seção de contato */
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  max-width: 149rem;
+  padding-left: 5rem; 
+  padding-right: 5rem;
+}
+
+/* Estilos para os campos de texto do formulário */
+.form-group input[type='text-name'],
+.form-group input[type='text-telefone'],
+.form-group input[type='text-email'] {
+  width: 50rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease;
+}
+
+/* Estilos para a mensagem de exibição */
+.show {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+/* Estilos para o campo de mensagem do formulário */
+.form-group textarea {
+  width: 50rem;
+  height: 25rem;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+  border: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease;
+}
+
+/* Estilos para as etiquetas do formulário */
+.form-group label {
+  font-size: 1.5rem;
+  color: #1a1c1d;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+/* Estilos para o ponto vermelho de aviso na etiqueta */
+#mensagem .ponto {
+  color: red;
+  margin-left: 0.2rem;
+  font-size: 1.5rem;
+}
+
+/* Estilos para o contêiner da etiqueta */
+.label-container {
+  display: flex;
+  font-weight: 600;
+}
+
+/* Estilos para o botão de envio do formulário */
+.form-group input[type='submit'] {
+  border: none;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+  background-color:#1a1c1d;
+  width: 10rem;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 2px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.7s, border-radius 0.7s;
+}
+
+/* Efeito de hover no botão de envio */
+.form-group input[type='submit']:hover {
+  background-color: gold;
+  border-radius: 3rem;
+}
+
+/* Efeito de clique no botão de envio */
+.form-group input[type='submit']:active {
+  scale: 0.9;
+}
+
+/* Espaçamento entre os grupos de formulário */
+.form .form-group {
+  margin-bottom: 3rem;
+}
+
+/* Estilos para a seção de informações de contato à esquerda */
+.contact-left {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0px;
+  height: 20rem;
+  padding: 0;
+  margin-top: 0;
+}
+
+/* Estilos para os itens de contato */
+.grid-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+/* Estilos para os links de ícones de contato */
+.grid-item a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Efeito de clique nos ícones de e-mail e localização */
+#email i:active, #local i:active {
+  scale: 0.9;
+}
+
+/* Efeito de hover nos ícones de e-mail e localização */
+#email i:hover, #local i:hover {
+  color: white;
+  transition: color 0.5s ease;
+}
+
+/* Estilos para os ícones de contato */
+.grid-item i {
+  font-size: 2.6rem;
+  height: 2.6rem;
+  width: 2.6rem;
+  padding: 1rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+  color: #1a1c1d;
+  background-color: gold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1),
+    0 8px 16px rgba(0, 0, 0, 0.1),
+    inset 0 -2px 4px rgba(255, 255, 255, 0.3),
+    inset 0 2px 2px rgba(0, 0, 0, 0.1),
+    inset 0 -1px 2px rgba(0, 0, 0, 0.2);   
+}
+
+/* Estilos para os textos nos itens de contato */
+.grid-item p {
+  font-size: 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.grid-item h1 {
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos para a seção de texto complementar */
+.contact-option {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 3.6rem;
+  margin-bottom: 2rem;
+}
+
+/* Estilos para os títulos e parágrafos de texto complementar */
+.supporting-text h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.supporting-text p {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  font-weight: 500;
+  max-width: 70rem;
+  text-align: justify;
+}
+
+/* Estilos para telas até 1800px */
+@media screen and (max-width: 1800px) {
+  .main {
+    padding: 9rem !important;
+  }
+
+}
+
+/* Estilos para telas até 1600px */
+@media screen and (max-width: 1600px) {
+  .main {
+    padding: 7rem !important;
+    margin: 4rem !important;
+  }
+  .contact{
+    gap: 7rem;
+    padding-left: 4rem; 
+    padding-right: 4rem;
+  }
+
+}
+
+/* Estilos para telas até 1390px */
+@media screen and (max-width: 1390px) {
+  .form-group input[type='text-name'],
+.form-group input[type='text-telefone'],
+.form-group input[type='text-email'],
+.form-group textarea {
+  width: 100% !important;
+}
+
+}
+/* Estilos para telas até 1300px */
+@media screen and (max-width: 1300px) {
+  .main{
+    margin: 3rem !important;
+    padding-left: 0 !important ;
+    padding-right: 0 !important ;
+  }
+  .contact{
+    display: flex !important;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    box-sizing: content-box !important;
+    gap: 4rem !important;
+    padding-left: 6rem !important; 
+    padding-right: 6rem !important;
+    
+  }
+
+.contact-lef{
+  display: grid;
+  grid-template-columns: 58% 42% !important;
+  gap: 5rem !important;
+  padding-right: 5rem;
+}
+
+.contact-option {
+  margin-top: 0 !important;
+}
+}
+
+/* Estilos para telas até 1225px */
+@media screen and (max-width: 1225px) {
+  .contact-lef{
+    grid-template-columns: 50% 50% !important;
+  }
+.form-group input[type='text-name'],
+.form-group input[type='text-telefone'],
+.form-group input[type='text-email'],
+.form-group textarea {
+  padding: 1rem;
+  font-size: 1.2rem !important;
+}
+
+.form-group label {
+  font-size: 1.3rem !important;
+}
+
+.show, .supporting-text h1, .contact-option, .grid-item h1 {
+  font-size: 1.8rem !important;
+
+}
+
+.supporting-text p, .grid-item P {
+  font-size: 1.6rem !important;
+
+}
+
+.form-group input[type='submit'] {
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  max-width: 9rem;
+
+}
+
+.form .form-group {
+  margin-bottom: 2.8rem !important;
+}
+
+.grid-item i {
+  font-size: 2.2rem !important;
+  height: 2.3rem !important;
+  width: 2.3rem !important;
+  padding: 1rem;
+  
+}
+
+} 
+
+/* Estilos para telas até 1030px */
+@media screen and (max-width: 1030px) {
+  .main {
+    width: 100%;
+    margin: 5rem 0 !important;
+    border-radius: 0;
+    border: none;
+    padding: 3rem 0;
+  }
+
+  .contact{
+    padding-left: 6.5rem !important;
+    padding-right: 6.5rem !important;
+  }
+
+  .contact-lef{
+    grid-template-columns: 1fr !important;
+    max-width: 100% !important;
+    padding-right: 0 !important;
+    gap: 4rem !important;
+  }
+
+  .supporting-text p{
+    max-width: 100% !important;
+  }
+}
+
+/* Estilos para telas até 850px */
+@media screen and (max-width: 850px) {
+  .contact{
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
+}
+
+
+/* Estilos para telas até 600px */
+@media screen and (max-width: 600px) {
+  .main {
+    margin: 4rem 0 !important ;
+  }
+
+  .contact, .contact-lef{
+    gap: 2rem !important;
+  }
+
+ .form-group input[type='text-name'],
+.form-group input[type='text-telefone'],
+.form-group input[type='text-email'],
+.form-group textarea {
+  padding: 1rem;
+  font-size: 0.9rem !important;
+}
+
+.form-group label {
+  font-size: 1rem !important;
+}
+
+.show, .supporting-text h1, .contact-option, .grid-item h1 {
+  font-size: 1.5rem !important;
+
+}
+
+.supporting-text p, .grid-item P {
+  font-size: 1.3rem !important;
+
+}
+
+.form-group input[type='submit'] {
+  padding: 0.5rem !important;
+  margin-top: 0.2rem !important;
+  font-size: 0.9rem !important;
+  max-width: 6rem !important;
+
+}
+
+.form .form-group {
+  margin-bottom: 2.5rem !important;
+}
+
+.grid-item i {
+  font-size: 1.9rem !important;
+  height: 2rem !important;
+  width: 2rem !important;
+  padding: 1rem;
+  
+}
+}
+
+
+
+/* Estilos para telas até 330px */
+@media screen and (max-width: 355px){
+  .grid-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    text-align: center;
+    }
+
+    .grid-item i{
+      margin-bottom: 2rem !important;
+    }
+
+}
+
+

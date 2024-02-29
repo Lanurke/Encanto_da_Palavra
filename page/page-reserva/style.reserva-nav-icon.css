@@ -1,0 +1,161 @@
+.home i {
+    position: fixed;
+    bottom: 20px;
+    left: 23px;
+    width:20px; /* Tamanho fixo para largura e altura */
+    height: 20px;
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 2px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    font-size: 2.6rem;
+    background-color: yellow;
+  }
+  .home i:active {
+    /* Efeito de clique para o subelemento de texto do subtítulo */
+    transform: scale(0.8);
+    transition: transform 0.1s ease;
+ }
+ .home a {
+    text-decoration: none;
+ }
+ 
+
+.whatsapp span {
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    width:20px; /* Tamanho fixo para largura e altura */
+    height: 20px;
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 2px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    font-size: 2.6rem;
+    background-color: yellow;
+    z-index: 2;
+}
+
+ .whatsapp span:active{
+    transform: scale(0.8);
+    transition: transform 0.1s ease;
+ }
+
+ .whatsapp span,
+.whatsapp .complemento {
+    transition: background-color 1s ease;
+}
+
+.whatsapp span:hover,
+.whatsapp:hover .complemento {
+    background-color: #25d366;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 2px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.whatsapp .complemento {
+    opacity: 0;
+    position: fixed;
+    right: 25px;
+    bottom: 30px;
+    z-index: 1;
+    color: #ffffff;
+    padding: 6px 14px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 25px;
+    pointer-events: none;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 2px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    transition: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    text-align: center;
+}
+
+ .whatsapp:hover .complemento {
+    right: 100px;
+    opacity: 1;
+    pointer-events: auto;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+
+@media screen and (max-width: 1600px) {
+    .home i, .whatsapp span, .complemento {
+       transform: scale(0.95) !important;
+    }
+
+    .whatsapp:hover .complemento {
+        right: 9rem !important;
+}
+}
+
+@media screen and (max-width: 750px) {
+    .home i, .whatsapp span{
+        bottom: 1rem !important;
+    }
+
+    .whatsapp .complemento{
+        bottom: 2rem !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .home i, .whatsapp span, .complemento {
+       transform: scale(0.8) !important;
+    }
+
+    .whatsapp:hover .complemento {
+        right: 6rem !important;
+    }
+    .home i {
+        left: 2rem;
+    }
+    .whatsapp span{
+        right: 2rem;
+    }
+    .home i, .whatsapp span{
+        bottom: 0.5rem !important;
+    }
+
+    .whatsapp .complemento{
+        bottom: 1.5rem !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .home i, .whatsapp span, .complemento {
+       transform: scale(0.7) !important;
+    }
+    .whatsapp:hover .complemento {
+        right: 4.5rem !important;
+    }
+    .home i {
+        left: 1.7rem;
+    }
+
+    .whatsapp span{
+        right: 1.7rem;
+    }
+
+    .whatsapp .complemento{
+        bottom: 1.5rem !important;
+    }
+
+}
+@media screen and (max-width: 330px) {
+    .home i, .whatsapp span, .complemento {
+       transform: scale(0.7) !important;
+    }
+
+    .home i {
+        left: 1.25rem !important;
+    }
+
+}

@@ -1,0 +1,305 @@
+/*footer inicial*/
+.header-footer {
+    /* Cabeçalho e rodapé da página */
+    position: relative;
+    background-image: url(/img/footer-2.png);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    padding: 0;
+    box-shadow: 1px 4px 5px black, 1px -4px 5px black;
+    z-index: 2;  
+}
+
+
+.motherbox {
+    /* Caixa principal */
+    display: grid;
+    grid-template-columns: 35% 35%;
+    max-width: 155rem;
+    margin: auto;
+    justify-content: center;   
+          
+}
+
+/* Estilo para o subtítulo */
+.undertitle {
+    font-size: 1.8rem;
+    display: flex;
+    justify-items: center ;
+    flex-direction: column;
+    text-shadow: 3px 5px 10px black;
+             
+}
+
+.undertitle h1 {
+    /* Estilo para o título principal do subtítulo */
+    padding-bottom: 3rem;
+    color: gold;
+    font-family: 'poppins';
+    
+}
+
+.undertitle span {
+    /* Estilo para o subelemento de texto do subtítulo */
+    display: inline-block;
+    padding: 1rem;
+    background-color: gold;
+    width: 39rem;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 2px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    font-family: 'poppins';
+    letter-spacing: 0.15rem;
+    display: flex;
+    place-items: center;
+    cursor: pointer;
+    transition: border-radius 0.5s;
+}
+
+/* Link no subtítulo */
+.span a {
+    text-decoration: none;
+    color: white;
+}
+
+.undertitle span:hover {
+    /* Efeito de hover para o subelemento de texto do subtítulo */
+    border-radius: 3rem;
+    transition: border-radius 0.5s ease;
+}
+
+.undertitle span:active {
+    /* Efeito de clique para o subelemento de texto do subtítulo */
+    transform: scale(0.9);
+    transition: transform 0.2s ease;
+}
+
+.subundertitle {
+    /* Subtítulo adicional */
+    font-size: 1.8rem;
+    line-height: 1.5;
+    font-family: 'Merriweather';
+    letter-spacing: 0.1rem;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: justify;
+    text-shadow: 3px 3px 3px black;
+    margin: auto;
+}
+
+/* Estilos para telas com largura máxima de 1800px */
+@media screen and (max-width: 1800px) {
+    .motherbox{
+        grid-template-columns: 38% 38%;
+    }
+}
+
+/* Estilos para telas com largura máxima de 1600px */
+@media screen and (max-width: 1600px) {
+    .motherbox{
+        grid-template-columns: 35% 35%;
+    }
+    .undertitle {
+        font-size: 1.65rem;
+        margin-bottom: 1.5rem !important;
+    }
+
+    .undertitle h1{
+        margin-top: 1.8rem !important;
+    }
+
+    .undertitle span {
+       width: 35.5rem;
+    }
+
+    .subundertitle {
+        font-size: 1.65rem;
+    }
+}
+
+/* Estilos para telas com largura máxima de 1340px */
+@media screen and (max-width: 1340px) {
+    .motherbox {
+        grid-template-columns: 37% 37%
+    }
+}
+
+/* Estilos para telas com largura máxima de 1300px */
+@media screen and (max-width: 1300px) {
+    .undertitle {
+        font-size: 1.5rem;
+        margin-bottom: 1.8rem;
+    }
+
+    .undertitle h1{
+        padding-bottom: 2.6rem !important;
+    }
+
+    .undertitle span {
+       width: 31.8rem;
+    }
+
+    .subundertitle {
+        font-size: 1.5rem;
+    }
+}
+
+/* Estilos para telas com largura máxima de 1190px */
+@media screen and (max-width: 1190px) {
+    .motherbox {
+        grid-template-columns: 39% 39% !important;
+    }
+}
+
+/* Estilos para telas com largura máxima de 1110px */
+@media screen and (max-width: 1110px) {
+    .header-footer{
+        background-size: contain;
+    }
+    .motherbox {
+        grid-template-columns: 41% 41% !important;
+    }
+    .undertitle h1{
+        padding-bottom: 2.5rem !important;
+    }
+}
+
+/* Estilos para telas com largura máxima de 1060px */
+@media screen and (max-width: 1060px) {
+    .motherbox {
+        grid-template-columns: 40% 40% !important;
+    }
+    .undertitle {
+        font-size: 1.4rem;
+        margin-bottom: 1.8rem;
+    }
+
+    .undertitle h1{
+        padding-bottom: 2.3rem !important;
+    }
+
+    .undertitle span {
+       width: 29.7rem !important;
+    }
+
+    .subundertitle {
+        font-size: 1.4rem;
+    }
+}
+
+
+/* Estilos para telas com largura máxima de 1020px */
+@media screen and (max-width: 1020px) {
+    .motherbox {
+        grid-template-columns: 42% 42% !important;
+    }
+
+    .undertitle h1{
+        padding-bottom: 2.1rem !important;
+    }
+}
+
+/* Estilos para telas com largura máxima de 850px */
+@media screen and (max-width: 850px) {
+    .header-footer{
+        height: 90% !important;
+       
+    }
+    .motherbox{
+        grid-template-columns: 1fr !important;
+    }
+    .subundertitle{
+        display: none;
+    }
+    .undertitle {
+        font-size: 1.8rem;
+                
+    }
+    .undertitle h1 {
+        padding-bottom: 3rem;
+       
+    }
+    .undertitle span {
+        width: 39rem !important;
+    }
+
+    .undertitle span:hover {
+        border-radius: 0;
+    }
+    
+    .undertitle span:active {
+        transform: scale(1);
+
+    }
+ }
+
+ @media screen and (max-height: 700px ) and (orientation: landscape) {
+    .header-footer{
+        background-size: cover !important;
+    }
+}
+
+/* Estilos para telas com largura máxima de 600px */
+@media screen and (max-width: 600px) {
+    .header-footer{
+        height: 85% !important;
+    }
+
+    .undertitle {
+        font-size: 1.5rem !important;
+        margin-bottom: 1.8rem !important;
+    }
+
+    .undertitle h1{
+        padding-bottom: 2.5rem !important;
+    }
+
+    .undertitle span {
+       width: 31.5rem !important;
+    }
+
+ }
+
+/* Estilos para telas com largura máxima de 450px */
+@media screen and (max-width: 450px) {
+    .header-footer{
+        height: 80% !important;
+    }
+    .undertitle {
+        font-size: 1.3rem !important;
+        margin-bottom: 1.5rem !important;
+     }
+
+    .undertitle h1{
+        padding-bottom: 2rem !important;
+    }
+
+    .undertitle span {
+       width: 27rem !important;
+    }
+
+ }
+
+/* Estilos para telas com largura máxima de 375px */
+@media screen and (max-width: 375px) {
+    .header-footer{
+        height: 75% !important;
+    }
+    .undertitle {
+        font-size: 1.1rem !important;
+        margin-bottom: 1.3rem !important;
+    }
+
+    .undertitle h1{
+        padding-bottom: 2rem !important;
+    }
+
+    .undertitle span {
+       width: 22.7rem !important;
+       box-shadow: rgba(0, 0, 0, 0.17) 0px -18px 2px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
+
+ }

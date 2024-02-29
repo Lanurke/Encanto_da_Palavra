@@ -1,0 +1,560 @@
+/* Estilo para a seção principal */
+.mainbox {
+    max-width: 155rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 5rem;
+    line-height: 1.5;
+    border-radius: 9rem;
+    color: #1a1c1d;
+    box-sizing: content-box;
+      
+  }
+
+  /* Efeito de sombra ao passar o mouse */
+  .mainbox:hover {
+    box-shadow: 1px 0 10px #1a1c1d;
+  }
+  
+  /* Estilo para a imagem */
+  #imagem {
+    width: 40rem;
+    height: 25rem;
+    justify-self: end;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+  }
+  
+  /* Estilo para o título e texto */
+  .mainbox-title {
+    max-width: 90%;
+    font-size: 2rem;
+    margin: auto 0;
+    }
+  
+  /* Estilo para o título específico */
+  .mainbox-title h1 {
+    font-family: 'Lugrasimo';
+    padding-bottom: 2rem;
+    text-align: left;
+  }
+  
+  /* Estilo para o texto */
+  .mainbox-title p {
+    padding: 1rem 0;
+    font-family: 'century-schoolbook';
+    border-bottom: dashed 1px black;
+    margin-bottom: 2rem;
+    text-align: justify;
+  }
+
+  /* Estilo para o botão "Link_title" */
+
+  #link_title{
+    display: none;
+  }
+
+  #link_title a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* Estilo para o botão "Leia Mais" */
+  .leia_mais {
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    max-width: auto;
+    padding: 1rem;
+    background-color: #744c24;
+    font-size: 2rem;
+    color: white;
+    top: -0.2rem;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 2px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+  
+  /* Efeito ao clicar no botão */
+  .leia_mais:active {
+    font-size: 1.8rem;
+    left: 0.5rem;
+    top: center;
+    max-width: 7.5rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  /* Efeito ao passar o mouse sobre o botão */
+  .leia_mais:hover {
+    border-radius: 1rem;
+    transition: background-color 0.5s ease, transform 0.5s ease, border-radius 0.5s ease;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 2px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+
+  /* Estilo para a figura */
+  .mainbox figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    background: white;
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
+    margin: 1.5rem;
+    box-shadow: 5px 1px 7px 0 #1a1c1d, -5px -1px 7px 0 #1a1c1d;
+    transition: transform 0.5s ease;
+  }
+  
+  /* Estilo para o texto da figura */
+  .mainbox figure figcaption {
+    font-family: 'Montserrat';
+    color: #1a1c1d;
+  }
+  
+  /* Efeito de rotação da figura ao passar o mouse */
+  .flip-container:hover .flipper {
+    transform: rotateY(180deg);
+    
+  }
+  
+  /* Estilo para o contêiner da rotação */
+  .flipper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+  }
+  
+  /* Estilo para a parte frontal da rotação */
+  .front {
+    position: relative;
+    backface-visibility: hidden;
+  }
+  
+  /* Estilo para a parte traseira da rotação */
+  .back {
+    position: absolute;
+    width: 42rem;
+    height: 29.3rem;
+    background: radial-gradient(circle, rgba(82, 35, 17, 1) 0%, rgba(112, 49, 25, 1) 48%, rgba(82, 35, 17, 1) 100%);
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 1px 7px 0 #1a1c1d, -5px -1px 7px 0 #1a1c1d;
+  }
+  
+  /* Estilo para o título na parte traseira */
+  .back .titulo {
+    font-size: 2rem;
+    text-shadow: 5px 3px 3px black;
+    font-family: 'Merriweather';
+    color: #e6ccb1;
+  }
+  
+  /* Estilo para o texto na parte traseira */
+  .back .titulo p {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+  }
+  
+/* Estilos para telas com largura máxima de 1800px */
+@media screen and (max-width: 1800px) {
+  .main {
+    border-top-right-radius: 9rem;
+    border-top-left-radius: 9rem;
+    padding: 9rem !important;
+    margin: 5rem !important;
+
+  }
+
+  .mainbox {
+    padding: 5rem !important;
+    border-radius: 8rem;
+ 
+  }
+  
+  .mainbox-title {
+    font-size: 1.9rem;
+  }
+
+  .mainbox-title {
+    max-width: 95%;
+  }
+
+}
+
+/* Estilos para telas com largura máxima de 1600px */
+@media screen and (max-width: 1600px) {
+  .main {
+    border-top-right-radius: 7rem;
+    border-top-left-radius: 7rem;
+    padding: 7rem !important;
+    margin: 4rem !important;
+  }
+
+  .mainbox {
+    padding: 4rem !important;
+    border-radius: 6rem;
+ 
+  }
+  
+  .mainbox-title {
+    font-size: 1.7rem;
+  }
+
+  #imagem {
+    width: 30rem !important;
+    height: 20rem !important;
+    border-radius: 1.5rem;
+  }
+
+  .back {
+    width: 32rem !important;
+    height: 23.5rem !important;
+  }
+
+  .back .titulo {
+    font-size: 1.5rem !important;
+  }
+
+  .back .titulo p {
+    padding-top: 0.7rem !important;
+    font-size: 1.3rem !important;
+  }
+  
+  .mainbox figure figcaption {
+    font-size: 1.2rem !important;
+  }
+
+  .leia_mais {
+    padding: 0.8rem;
+    font-size: 1.8rem;
+    top: -0.2rem;
+   
+  }
+
+  .leia_mais:active {
+    left: 0 !important;
+    margin-bottom: 0.3rem;
+    transform: scale(0.9) !important;
+  }
+
+  .mainbox figure figcaption {
+    font-size: 1.2rem !important;
+  }
+
+}
+/* Estilos para telas com largura máxima de 1300px */
+@media screen and (max-width: 1300px) {
+  .main {
+    border-top-right-radius: 5rem;
+    border-top-left-radius: 5rem;
+    padding: 3rem !important;
+    margin: 3rem !important;
+    border: solid 0.4rem #744c24;
+  }
+
+  .mainbox {
+    padding: 3rem !important;
+    border-radius: 5rem !important;
+
+  }
+  
+  .mainbox-title {
+    font-size: 1.5rem;
+  }
+
+}
+
+
+/* Estilos para telas com largura máxima de 1030px */
+@media screen and (max-width: 1030px) {
+  .main {
+    margin: 5rem 0 !important;
+    border-radius: 0;
+    border: none;
+    padding: 3rem 0;
+  }
+
+
+  .mainbox:hover {
+    box-shadow: none;
+  }
+
+  #imagem {
+    width: 27rem !important;
+    height: 17rem !important;
+    padding: 0.4rem !important;
+  }
+
+  .back {
+    width: 28.5rem !important;
+    height: 20rem !important;
+  }
+
+  .back .titulo {
+    font-size: 1.2rem !important;
+  }
+
+  .back .titulo p {
+    font-size: 1.1rem !important;
+    padding-top: 0.6rem !important;
+  }
+
+}
+
+/* Estilos para telas com largura máxima de 850px */
+@media screen and (max-width: 850px) {
+  .main {
+    padding: 0.5rem !important;
+    
+  }
+
+  #main-4{
+    margin-bottom: 5rem;
+  }
+
+  .mainbox {
+    max-width: 100% !important;
+    padding: 5rem 0 0 !important;
+    display: grid;
+    grid-template-columns: 1fr !important;
+    border-radius: 0;   
+  }
+
+  #imagem {
+    width: 40rem !important;
+    height: 25rem !important;
+  }
+
+  .back {
+    width: 42rem !important;
+    height: 29.3rem !important;
+  }
+
+  .back .titulo {
+    font-size: 2rem !important;
+  }
+  
+
+  .back .titulo p {
+    padding-top: 1rem !important;
+    font-size: 1.5rem !important;
+  }
+
+  .mainbox-title{
+    font-size: 2rem !important;
+    padding: 0 2rem !important;
+  }
+
+  .mainbox-title h1 {
+    text-align: center !important;
+    max-width: 100% !important;
+  }
+
+  .mainbox-title p {
+    border-bottom: none;
+    max-width: 100% !important;
+  }
+
+  .leia_mais {
+    display: none;
+  }
+
+  .mainbox-title h1 {
+    display: none;
+  }
+
+  #link_title{
+    display: block !important;
+    text-align: center;
+  }
+
+  .mainbox figure figcaption {
+    font-size: 1.5rem !important;
+  }
+
+}
+
+/* Estilos para telas com largura máxima de 600px */
+@media screen and (max-width: 600px) {
+  .main {
+    margin: 4rem 0 !important ;
+  }
+  .mainbox {
+    max-width: auto !important;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #imagem {
+    width: 30rem !important;
+    height: 20rem !important;
+    border-radius: 1.5rem !important;
+  }
+
+  .mainbox figure {
+    font-size: 1rem;
+  }
+
+  .mainbox figure figcaption {
+    font-size: 1rem !important;
+  }
+
+  .back {
+    width: 32rem !important;
+    height: 23.5rem !important;
+  }
+
+  .back .titulo {
+    font-size: 1.5rem !important;
+  }
+
+  .back .titulo p {
+    padding-top: 0.7rem !important;
+    font-size: 1.3rem !important;
+  }
+
+  .mainbox figure {
+    font-size: 1rem;
+  }
+
+  .mainbox figure figcaption {
+    font-size: 1rem !important;
+  }
+
+  .mainbox-title {
+    max-width: 100%;
+    margin: 0;
+    text-align: justify;
+    font-size: 1.5rem !important;
+  }
+
+  .mainbox-title p {
+    border-bottom: none;
+  }
+
+}
+
+/* Estilos para telas com largura máxima de 400px */
+@media screen and (max-width: 400px) {
+  #imagem {
+    width: 28rem !important;
+    height: 18rem !important;
+  }
+
+  .back {
+    width: 30rem !important;
+    height: 21rem !important;
+  }
+
+  .back .titulo {
+    font-size: 1.3rem !important;
+  }
+
+  .back .titulo p {
+    font-size: 1.15rem !important;
+    padding-top: 0.7rem !important;
+  }
+
+  .mainbox figure figcaption {
+    font-size: 0.9rem !important;
+  }
+}
+
+/* Estilos para telas com largura máxima de 375px */
+@media screen and (max-width: 375px) {
+  .main {
+    margin: 3rem 0 !important;
+  }
+
+  .mainbox-title {
+    font-size: 1.4rem !important;
+    padding: 0 1.1rem;
+  }
+
+  #imagem {
+    width: 27rem !important;
+    height: 17rem !important;
+    padding: 0.4rem !important;
+  }
+
+  .mainbox figure figcaption {
+    font-size: 0.8rem !important;
+  }
+
+  .back {
+    width: 28.5rem !important;
+    height: 20rem !important;
+  }
+
+  .back .titulo {
+    font-size: 1.2rem !important;
+  }
+
+  .back .titulo p {
+    font-size: 1.1rem !important;
+    padding-top: 0.6rem !important;
+  }
+}
+
+/* Estilos para telas com largura máxima de 360px */
+@media screen and (max-width: 360px) {
+  .mainbox-title {
+    font-size: 1.3rem !important;
+    padding: 0 0.9 !important;
+  }
+
+  #imagem {
+    width: 26rem !important;
+    height: 16rem !important;
+    padding: 0.3rem !important;
+  }
+
+  .back {
+    width: 27.5rem !important;
+    height: 19rem !important;
+  }
+
+  .back .titulo {
+    font-size: 1.1rem !important;
+  }
+}
+
+/* Estilos para telas com largura máxima de 330px */
+@media screen and (max-width: 330px) {
+  .mainbox-title {
+    font-size: 1.2rem !important;
+    padding: 0 1.5rem !important;
+  }
+
+  #imagem {
+    width: 22.5rem !important;
+    height: 12.5rem !important;
+    padding: 0.2rem !important;
+  }
+
+  .back {
+    width: 24rem !important;
+    height: 15.5rem !important;
+  }
+
+  .back .titulo {
+    font-size: 1rem !important;
+  }
+
+  .back .titulo p {
+    font-size: 0.9rem !important;
+    padding-top: 0.4rem !important;
+  }
+
+  .mainbox figure figcaption {
+    font-size: 0.8rem !important;
+  }
+}

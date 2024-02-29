@@ -1,0 +1,123 @@
+/* Estilo para a barra de navegação vertical */
+.vertical-navbar {
+    position: absolute;
+    width: 28rem;
+    height: 100%;
+    background-color: #1E0F08;
+    color: #CF9551;
+    left: 0;
+    top: 0;
+    font-family: 'Merriweather';
+    box-sizing: border-box;
+    border-right: solid 5px #CF9551;
+    opacity: 0;
+    z-index: 10;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s, background-color 1s;
+}
+
+/* Estilo quando a classe 'show-vertical-navbar' está presente */
+.vertical-navbar.show-vertical-navbar {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Estilo para a navegação dentro da barra vertical */
+.vertical-navbar .nvb-nav {
+    display: grid;
+    margin-top: 2rem;
+}
+
+/* Estilo para o logotipo dentro da barra vertical */
+.nvb-logo {
+    padding: 1.6rem 1rem;
+}
+
+/* Estilo para os links dentro do logotipo */
+.nvb-logo a {
+    font-size: 1.4rem;
+    color: #CF9551;
+    text-shadow: 5px 3px 3px black;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+/* Estilo quando o link do logotipo está ativo */
+.nvb-logo:active {
+    scale: 0.9;
+}
+
+/* Estilo para os links de navegação dentro da barra vertical */
+.nvb-nav a {
+    text-decoration: none;
+    color: #CF9551;
+    font-size: 1.4rem;
+    padding: 1rem;
+    border-bottom: solid 1px #CF9551;
+}
+
+/* Estilo quando o link de navegação está sendo hoverizado */
+.nvb-nav a:hover {
+    color: #CF9551;
+    background-color: #080402;
+    box-sizing: content-box;
+}
+
+/* Estilo para a imagem SVG */
+.svg img {
+    position: fixed;
+    width: 25rem;
+    height: auto;
+    color: white;
+    margin: 37rem 1rem;
+    pointer-events: none; 
+    left: 50%;
+    bottom: 0;
+    margin: auto;
+    transform: translateX(-50%);
+
+}
+
+/* Estilo para elementos ocultos */
+.hidden {
+    display: none;
+}
+
+/* Estilo para o fundo semitransparente sobreposto */
+#background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor e opacidade do fundo semitransparente */
+    z-index: 4; /* Definir um z-index maior que o do vertical-navbar */
+}
+
+#yep{
+    display: none;
+}
+
+/* Estilos para telas até 390px */
+@media screen and (max-width: 390px) {
+    .vertical-navbar{
+        width: 24rem;
+    }
+    .nvb-logo a, .nvb-nav a{
+        font-size: 1.2rem !important;
+    }
+
+    .svg{
+        display: none;
+    }
+}
+
+/* Estilos para telas até 330px */
+@media screen and (max-width: 330px) {
+    .vertical-navbar{
+        width: 22rem;
+    }
+    .nvb-logo a, .nvb-nav a{
+        font-size: 1rem !important;
+    }
+}

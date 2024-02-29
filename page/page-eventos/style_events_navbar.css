@@ -1,0 +1,235 @@
+/* Estilos para a caixa principal (class blackbox) */
+.blackbox {
+  width: 100%;
+  height: 50rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Estilos para a caixa interna (class box) */
+.header-container {
+  max-width: 155rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 0 19rem;
+}
+
+/* Estilos para o título geral (class titulo) */
+.header-logo {
+  font-size: 1.3rem;
+  line-height: 1.25;
+  color: #e6ccb1;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Merriweather';
+  text-shadow: 5px 3px 3px black;
+}
+
+.header-logo h1 {
+  margin-bottom: 0.5rem;
+}
+
+/* Estilos para a barra de navegação (class nav) */
+.main-nav {
+  margin-left: auto;
+  margin-bottom: 0.5rem; /*ajustar a posição do nav*/
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 4rem;
+  list-style: none;
+  font-size: 1.5rem;
+  text-shadow: 5px 3px 3px black;
+  font-family: 'Merriweather';
+  align-items: center;
+}
+
+.main-nav a,
+#more {
+  text-decoration: none;
+  color: #e6ccb1;
+  text-shadow: 5px 3px 3px black;
+  cursor: pointer;
+}
+
+#more{
+  font-size: 2rem;
+}
+
+#more:hover {
+  color: rgb(216, 143, 64);
+}
+
+.main-nav a:hover {
+  color: rgb(216, 143, 64);
+}
+
+/* Fixar o estilo em Fale Conosco*/
+#eventos {
+  color: rgb(216, 143, 64);
+  text-shadow: 5px 3px 3px black;
+}
+
+/* Estilos para a área de exibição (class display) */
+.display {
+  color: #e6ccb1;
+  margin: 10rem auto;
+  text-shadow: 5px 3px 3px black;
+  display: flex;
+  font-family: 'lugrasimo';
+}
+
+/* Estilos para o título da área de exibição (class titulo-display) */
+.display-title-events {
+  max-width: 100%;
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+  margin: auto;
+  text-shadow: 3px 3px 3px black;
+}
+
+.display-title-events h1 {
+  font-size: 4rem;
+  margin: auto;
+  text-align: center;
+}
+
+
+/* Estilos para telas até 1800px */
+@media screen and (max-width: 1800px) {
+  .header-container{
+    padding: 0 18rem !important;
+  }
+
+
+
+}
+/* Estilos para telas até 1600px */
+@media screen and (max-width: 1600px) {
+  .header-container{
+    padding: 0 14rem !important;
+  }
+
+}
+
+/* Estilos para telas até 1300px */
+@media screen and (max-width: 1300px) {
+  .header-container{
+    padding: 0 8rem !important;
+  }
+
+  .display-title-events h1{
+    font-size: 3.7rem !important;
+  }
+
+}
+/* Estilos para telas até 1030px */
+@media screen and (max-width: 1030px) {
+  .main-nav #sobre_nos, #reserva, #eventos, #contato {
+    display: none; 
+  }
+
+  #more {
+    font-size: 3rem;
+}
+
+  .header-container{
+    padding: 0 4.9rem !important;
+  }
+
+}
+
+/* Estilos para telas até 850px */
+@media screen and (max-width: 850px) {
+  .header-container{
+    padding: 0 1.4rem !important;
+  }
+  
+  #more {
+    font-size: 3rem !important; 
+  }
+
+  .main-nav ul {
+    gap: 0; 
+  }
+}
+
+/* Estilos para telas até 600px */
+@media screen and (max-width: 600px) {
+  .display-title-events h1 {
+    font-size: 3rem !important;
+  }
+
+  .header, .blackbox{
+    height: 40rem !important;
+  }
+}
+
+/* Estilos para telas até 500px */
+@media screen and (max-width: 500px) {
+  .display-title-events h1 {
+    font-size: 2.5rem !important;
+  }
+
+}
+/* Estilos para telas até 435px */
+@media screen and (max-width: 435px) {
+  .header-logo {
+    font-size: 1.1rem; 
+  }
+
+  .header, .blackbox{
+    height: 35rem !important;
+  }
+
+  .display{
+    margin: 9rem auto !important;
+  }
+}
+
+/* Estilos para telas até 350px */
+@media screen and (max-width: 375px){
+  .header-container{
+    padding-left: 0.9rem !important;
+    padding-right: 0.9rem !important;
+  }
+
+  .header-logo {
+    font-size: 1rem !important; 
+  }
+  
+}
+
+/* Estilos para telas até 330px */
+@media screen and (max-width: 330px){
+  .header-container{
+    padding-left: 0.8rem !important;
+    padding-right: 0.8rem !important;
+  }
+
+  .header-logo {
+    font-size: 0.8rem !important; 
+  }
+  #more{
+    font-size: 2.5rem !important;
+  }
+
+  .display-title-events h1 {
+    font-size: 2rem !important;
+  }
+  
+  .header, .blackbox{
+    height: 25rem !important;
+  }
+
+  .display{
+    margin: 5rem auto !important;
+  }
+  }
+
+
+

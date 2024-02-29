@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Cardápio</title>
+	
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="style_cardapio_layout.css">
+		<link rel="stylesheet" href="style_cardapio_navbar.css">
+ 		<link rel="stylesheet" href="style_cardapio_main-01.css">
+ 		<link rel="stylesheet" href="style_cardapio_main-02.css">
+		<link rel="stylesheet" href="style.cardapio-navbar-vertical.css">
+		<link rel="stylesheet" href="style.option.css">
+		<link rel="stylesheet" href="../../CSS/style.footer-header.css">
+		<link rel="stylesheet" href="../../CSS/style_footer-underfoot.css">
+		<link rel="stylesheet" href="../../CSS/style.footer-social-media.css">
+		<link rel="stylesheet" href="../../CSS/style.footer-nav-icon.css">
+		<link rel="stylesheet" href="../../CSS/style.alert.css">
+
+	
+		<!-- Google Fonts -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap">
+		<link rel="stylesheet" href="https://fonts.cdnfonts.com/css/century-schoolbook">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lugrasimo">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap">
+	
+		<!-- Font Awesome Icons-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	
+		<!-- Scripts -->
+		<script src="../../JS/scritp_icon.js"></script>
+		<script src="../../JS/script.external_page.js"></script>
+		<script src="../../JS/script_vertical.js"></script>
+		<script src="../../JS/script.clube.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<script src="https://kit.fontawesome.com/ab6ecfd2fd.js" crossorigin="anonymous"></script>
+
+	</head>
+	
+	<body>
+		<!--fundo transparente-->
+		<div id="background-overlay" class="hidden"></div>
+		<!-- Seção da barra de navegação -->
+		<header class="header" id="navbar">
+			<div class="header-container">
+				<div class="content-container">
+					<!-- Navegação Principal -->
+					<nav class="main-nav">
+						<ul>
+							<li><a href = "#us" id="cardapio"> Cardápio</a></li>
+							<li><a href = "/page/page-reserva/reserva.html" id="reserva"> Faça sua Reserva</a></li>
+							<li><a href = "/page/page-eventos/eventos.html" id="eventos">Eventos</a></li>
+							<li><a href = "/page/page-contato/contato.html" id="contato">Contato</a></li>
+							<li id="more">&#9776;</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<!--Vertical Navbar-->
+			<div id="vertical-navbar-container"></div>
+		</header>
+		<!-- Seção de Banner -->
+		<div class="banner">
+			<!-- Área de Exibição -->
+			<div class="transparency-black"></div>
+		</div>
+		<!-- Conteúdo -->
+		<main class="main" id="main">
+
+			<!-- Seção do Cardápio Geral -->
+			<section class="general-menu">
+			  <!-- Container para os Itens do Menu -->
+			  <div class="container-menu">
+		  
+				<!-- Item de Menu 1: Café -->
+				<a href="#" class="general-menu-1">
+				  <div class="box-menu">
+					<div class="figure-1">
+					  <img src="../../img/coffe-menu.png" alt="Ícone de Café">
+					</div>
+					<div class="caption">
+					  <p>Café</p>
+					</div>
+				  </div>
+				</a>
+		  
+				<!-- Item de Menu 2: Café Gelado -->
+				<a href="#" class="general-menu-2">
+				  <div class="box-menu">
+					<div class="figure-2">
+					  <img src="../../img/coffe-cold-menu.png" alt="Ícone de Café Gelado">
+					</div>
+					<div class="caption">
+					  <p>Café Gelado</p>
+					</div>
+				  </div>
+				</a>
+		  
+				<!-- Item de Menu 3: Lanche -->
+				<a href="#" class="general-menu-3">
+				  <div class="box-menu">
+					<div class="figure-3">
+					  <img src="../../img/lanche-menu.png" alt="Ícone de Lanche">
+					</div>
+					<div class="caption">
+					  <p>Lanche</p>
+					</div>
+				  </div>
+				</a>
+		  
+				<!-- Item de Menu 4: Torta -->
+				<a href="#" class="general-menu-4">
+				  <div class="box-menu">
+					<div class="figure-4">
+					  <img src="../../img/torta-menu.png" alt="Ícone de Torta">
+					</div>
+					<div class="caption">
+					  <p>Torta</p>
+					</div>
+				  </div>
+				</a>
+		  
+				<!-- Item de Menu 5: Bebida -->
+				<a href="#" class="general-menu-5">
+				  <div class="box-menu">
+					<div class="figure-5">
+					  <img src="../../img/bebida-menu.png" alt="Ícone de Bebida">
+					</div>
+					<div class="caption">
+					  <p>Bebida</p>
+					</div>
+				  </div>
+				</a>
+		  
+				<!-- Item de Menu 6: Mini Almoço -->
+				<a href="#" class="general-menu-6">
+				  <div class="box-menu">
+					<div class="figure-6">
+					  <img src="../../img/refeicao-menu.png" alt="Ícone de Mini Almoço">
+					</div>
+					<div class="caption">
+					  <p>Mini Almoço</p>
+					</div>
+				  </div>
+				</a>
+		  
+				<!-- Item de Menu 7: Pães -->
+				<a href="#" class="general-menu-7">
+				  <div class="box-menu">
+					<div class="figure-7">
+					  <img src="../../img/pao-menu.png" alt="Ícone de Pães">
+					</div>
+					<div class="caption">
+					  <p>Pães</p>
+					</div>
+				  </div>
+				</a>
+		  
+				<!-- Item de Menu 8: Vegano -->
+				<a href="#" class="general-menu-8">
+				  <div class="box-menu">
+					<div class="figure-8">
+					  <img src="../../img/vegano-menu.png" alt="Ícone Vegano">
+					</div>
+					<div class="caption">
+					  <p>Vegano</p>
+					</div>
+				  </div>
+				</a>
+			</section>
+			<!-- Seção Sobre Nós -->
+			<section class="text-menu" id="us">
+				<div class="tm-container-us">
+					<div class="tm-text-us">
+						<h2>SOBRE NÓS</h2>
+						<h1>Encanto da Palavra: um lugar para amantes da literatura.</h1>
+						<P>Fundado em 30 de Dezembro de 1993, a Encanto da Palavra surgiu da ideia de unir a experiência sensorial dos livros com a do aroma do café.</P><br>
+						<p>Desde então, a Encanto da Palavra tem se destacado como um refúgio para aqueles que buscam mais do que uma simples refeição ou uma xícara de café. Somos um santuário para os amantes da literatura e apreciadores de cafés especiais, um espaço onde as histórias ganham vida e os aromas despertam emoções.</p><br>
+						<p>Nossa jornada transcende o simples ato de servir café; ela se tornou uma celebração contínua da cultura, do conhecimento e da arte. Cada detalhe, desde a cuidadosa seleção dos grãos até a escolha dos livros em nossas estantes, é uma expressão do nosso compromisso com a qualidade e a excelência.</p>
+					</div>
+					<img id="wdn" class="tm-img" src="../../img/us.png">
+				</div>
+			</section>
+			
+			<!-- Seção Nossa Missão -->
+			<section class="text-menu">
+				<div class="tm-container-mission">
+					<img id="wdn" class="tm-img" src="../../img/mission.jpg">
+					<div class="tm-text-mission">
+						<h2>NOSSA MISSÃO</h2>
+						<h1>Não somos apenas uma cafeteria. 
+						Somos uma experiência sensorial.</h1>
+						<P>Nossos ingredientes são selecionados e inpescionados pelos principais certificados de qualidade. Nosso objetivo é permitir que você possa desfrutar das melhores experiências sensoriais: mente, visão, tato, olfato e paladar. Nenhum deles será esquecido.</P><br>
+						<p>Além dos tradicionais cafés, oferecemos café gelado, lanches, tortas, bebidas, mini almoço, variados tipos de pães, além de contarmos com opções veganas.</p>
+					</div>
+				</div>
+			</section>
+			
+			<!-- Seção Nossos Valores -->
+			<section class="text-menu">
+				<div class="tm-container-value">
+					<div class="tm-text-value">
+						<h2>NOSSOS VALORES</h2>
+						<h1>Acreditamos que aquilo que recebemos devemos retribuir à sociedade.</h1>
+						<P>Na Encanto da Palavra, nossos valores são tecidos na trama de uma experiência única, onde a paixão pela arte, gastronomia e comunidade se entrelaçam. Colocamos em prática a convicção de que cada detalhe importa, desde a escolha dos ingredientes frescos até a atmosfera acolhedora que criamos. Nosso compromisso com a qualidade transcende os limites do sabor, estendendo-se à promoção de uma cultura que valoriza novos talentos.</P><br>
+						<p>Somos mais que uma cafeteria; somos um espaço vibrante que celebra a expressão artística. Aqui, saraus ganham vida, e cada evento é uma oportunidade de dar destaque a escritores locais e contadores de histórias, proporcionando um palco para suas narrativas ganharem o merecido protagonismo. Acreditamos que a cultura é uma ponte que conecta as pessoas, e é nossa missão ser um facilitador desse encontro, proporcionando oportunidades para artistas emergentes brilharem.</p><br>
+						<p>Em cada xícara de café, cultivamos mais que um sabor excepcional; cultivamos uma comunidade que compartilha valores de inclusão, criatividade e apreço pelas histórias que nos definem. Seja apreciando uma obra de arte nas paredes ou saboreando uma refeição cuidadosamente preparada, cada visita à Encanto da Palavra é uma imersão em uma cultura que valoriza não apenas o paladar, mas também a riqueza das experiências compartilhadas.</p>
+					</div>
+					<img id="wdn" class="tm-img" src="../../img/value.jpg">
+				</div>
+			</section>
+			
+			<!-- Seção Compromisso com a Sustentabilidade -->
+			<section class="text-menu">
+				<div class="tm-container-environmental">
+									<img id="wdn" class="tm-img" src="../../img/environmental.jpg">
+					<div class="tm-text-environmental">
+						<h2>NOSSO COMPROMISSO COM A SUSTENTABILIDADE</h2>
+						<h1>A sustentabilidade ambiental é fundamental para a sobrevivência do café.</h1>
+						<p>Na Encanto da Palavra, estamos profundamente comprometidos com práticas sustentáveis que refletem nosso respeito pelo meio ambiente e a comunidade que nos cerca. Buscamos constantemente reduzir nosso impacto ambiental, optando por ingredientes provenientes de fontes locais e sustentáveis. Ao apoiar produtores locais, não apenas promovemos a economia regional, mas também garantimos a frescura e qualidade dos ingredientes em nossos pratos.</p><br>
+						<p>Além disso, em nossa operação diária, implementamos estratégias para minimizar o desperdício, adotando práticas de reciclagem e compostagem. Nosso compromisso com a eliminação de plásticos descartáveis é evidente na oferta de alternativas eco-friendly, como copos e utensílios biodegradáveis. A Encanto da Palavra é um espaço onde a sustentabilidade é mais do que um conceito; é uma prática cotidiana que permeia cada aspecto de nossa jornada.</p><br>
+						<p>Ao adotar essas práticas sustentáveis, a Encanto da Palavra não apenas busca preservar o meio ambiente, mas também promover uma consciência ambiental entre nossos clientes. Acreditamos que cada pequena ação contribui para um impacto positivo, e estamos comprometidos em liderar pelo exemplo, inspirando a comunidade a adotar hábitos mais sustentáveis e criar um futuro mais verde para todos.</p>
+					</div>
+				</div>
+			</section>
+  		</main>
+  		<!--Footer-->
+		<div id="footer-container"></div>
+	</body>
+</html>

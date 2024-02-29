@@ -1,0 +1,156 @@
+/* Estilos para o título dos eventos */
+.events-title {
+    border-bottom: solid 0.2rem #2c2d30;
+    max-width: 150rem;
+    margin: auto;
+    text-align: center;
+    padding: 4rem 0;
+    font-size: 3rem;
+    font-family: 'Felix Titling';
+    color: #2c2d30;
+    margin-bottom: 5rem;
+  }
+  
+  /* Estilos para a grade de eventos */
+  .events {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    max-width: 155rem;
+    margin: auto;
+    justify-content: space-between;
+  }
+  
+  /* Estilos para a grade de eventos na segunda linha (class line_2) */
+  .line_2 .events {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    max-width: 115rem;
+    margin: auto;
+    justify-content: space-between;
+  }
+  
+
+  /* Estilos para telas até 1800px */
+  @media screen and (max-width: 1800px) {
+    .main {
+      padding: 9rem !important;
+    }
+  }
+
+    /* Estilos para telas até 1600px */
+  @media screen and (max-width: 1600px) {
+    .main {
+      margin: 4rem !important;
+      padding: 7rem !important;
+      display: flex !important;
+      flex-direction: column !important;
+      place-items: center;
+      
+    }
+
+    .events {
+      grid-template-columns: repeat(3, auto) !important;
+      gap: 3rem !important;
+
+    } 
+
+   .events-title {
+      font-size: 2.5rem !important;
+      padding-top: 4rem !important;
+      padding-bottom: 1rem !important;
+    }
+
+  }
+
+  
+  /* Estilos para telas até 1300px */
+  @media screen and (max-width: 1300px) {
+    .main{
+      margin: 3rem !important;
+      padding-left: 0 !important ;
+      padding-right: 0 !important ;
+    }
+  
+
+  .events {
+    grid-template-columns: repeat(2, auto) !important;
+  } 
+
+  .events-title {
+    font-size: 2.5rem !important;
+  }
+
+  .line_4 .events{
+    max-width: 67rem !important;
+  }
+ 
+
+}
+
+
+    /* Estilos para telas até 1030px */
+  @media screen and (max-width: 1030px) {
+    .main {
+      width: 100%;
+      margin: 5rem 0 !important;
+      border-radius: 0;
+      border: none;
+      padding: 3rem 4rem !important;
+    }
+
+    .events-title {
+      font-size: 2rem !important;
+      padding-top: 6rem !important;
+    }
+  }
+  
+    /* Estilos para telas até 750px */
+  @media screen and (max-width: 750px) {
+    .events {
+      grid-template-columns: repeat(1, auto) !important;
+
+    }
+
+    .line_1{
+      margin: auto !important;
+      place-items: center !important;
+    }
+  
+    .line_1 .events, .line_2 .events, .line_3 .events, .line_4 .events, .line_5 .events {
+      grid-template-columns: repeat(1, auto);
+      justify-content: center;
+      place-items: center;
+    }
+  
+    .events-title {
+      font-size: 2rem !important;
+    }
+    .line_4 .events{
+      max-width: 50rem !important;
+      place-content: center !important;
+      
+    }
+  }
+  
+  /* Estilos para telas até 600px */
+@media screen and (max-width: 600px) {
+  .main {
+    margin: 4rem 0 !important ;
+    padding: 4rem !important;
+  }
+}
+
+  /* Estilos para telas até 420px */
+@media screen and (max-width: 420px) {
+  .events-title{
+    font-size: 1.5rem !important;
+    }
+}
+  /* Estilos para telas até 360px */
+@media screen and (max-width: 360px) {
+  .events-title{
+    font-size: 1.2rem !important;
+    margin-bottom: 3rem !important;
+
+  }
+}

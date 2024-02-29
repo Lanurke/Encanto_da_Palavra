@@ -1,0 +1,93 @@
+/* Reset de margens e preenchimentos */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo básico do HTML */
+html {
+  font-size: 10px;
+  background-color: #E7DFD7;
+  line-height: 1.5;
+}
+
+/* Definição das áreas da grade */
+.header {
+  grid-area: header;
+}
+
+.banner {
+  grid-area: banner;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+/* Estilo da grade principal */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+      'header header header header header header'
+      'banner banner banner banner banner banner'
+      'main main main main main main'
+      'footer footer footer footer footer footer';
+}
+
+.grid-container > * {
+  padding: 2rem 0;
+  font-size: 3rem;
+  box-sizing: content-box;
+}
+
+/* Estilo do cabeçalho (item1) */
+.header {
+  height: 100%;
+  width: auto;
+  margin: auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilo do banner (item2) */
+.banner {
+  height: 70rem;
+  max-width: 155rem;
+  margin: auto;
+  padding: 0;
+  background-image: url("../../img/menu.png");
+  background-size: cover;
+  background-position: bottom;
+  border-radius: 5rem;
+  box-sizing: border-box;
+}
+
+/* Estilo da área principal (item3) */
+.main {
+  height: auto;
+  box-sizing: border-box;
+}
+
+/* Estilo do rodapé (item4) */
+.footer {
+  padding: 0;
+  color: white;
+  height: 30rem;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url(/img/footer.jpg);
+}
+
+
+@media screen and (max-width: 315px) {
+  body{
+    overflow-x: hidden;
+  }
+  
+}

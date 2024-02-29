@@ -1,0 +1,433 @@
+/* Estilos para a caixa principal (class blackbox) */
+.blackbox {
+    width: 100%;
+    height: 120rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: auto;
+    padding: 1rem;
+    border-bottom-right-radius: 10rem;
+    border-bottom-left-radius: 10rem;
+    box-sizing: border-box;
+    
+  }
+  
+  /* Estilos para a caixa interna (class box) */
+  .header-container {
+    max-width: 155rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 0 19rem;
+  }
+  
+  /* Estilos para o título geral (class titulo) */
+  .header-logo {
+    font-size: 1.3rem;
+    line-height: 1.25;
+    color:  #e6ccb1;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Merriweather';
+    text-shadow: 5px 3px 3px  black;
+  }
+  
+  .header-logo h1 {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Estilos para a barra de navegação (class nav) */
+  .main-nav {
+    margin-left: auto;
+    margin-bottom: 0.5rem /*ajustar a posição do nav*/
+  }
+  
+  .main-nav ul {
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+    font-size: 1.5rem;
+    text-shadow: 5px 3px 3px black;
+    font-family: 'Merriweather';
+    align-items: center;
+  }
+  
+  .main-nav a, #more {
+    text-decoration: none;
+    color: #e6ccb1;
+    text-shadow: 5px 3px 3px black;
+    cursor: pointer;
+  }
+
+  #more{
+    font-size: 2rem;
+  }
+
+  #more:hover{
+    color: rgb(216, 143, 64);
+
+  }
+  
+  .main-nav a:hover {
+    color: rgb(216, 143, 64);
+
+    }
+
+  /* Fixar o estilo em Fale Conosco*/
+  #contato {
+    color: rgb(216, 143, 64);
+    text-shadow: 5px 3px 3px black;
+  }
+
+  
+/* Estilos para a área de exibição (class display) */
+.display {
+  color: #fff9e1;
+  height: 100%;
+  max-width: 153.5rem;
+  margin: 21rem auto;
+  text-shadow: 5px 3px 3px black;
+  padding-left: 19.5rem; 
+  padding-right: 19.5rem;
+  
+}
+
+/* Estilos para o título da área de exibição (class titulo-display) */
+.title-display-contact {
+  max-width: 55rem;
+  font-size: 1.9rem;
+  line-height: 1.7;
+  font-family: 'Merriweather';
+  letter-spacing: 0.1rem;
+  color: white;
+  text-align: justify;
+  text-shadow: 3px 3px 3px black;
+ 
+}
+
+.title-display-contact h1 {
+  margin: auto;
+  font-family: 'Merriweather';
+}
+
+.title-display-contact p {
+  padding: 3rem 0;
+  font-family: 'Merriweather';
+  font-size: 1.8rem;
+  text-align: left;
+}
+
+/* Estilos para o botão na parte inferior (class nav-bottom) */
+.nav-bottom, .nav-bottom-1060{
+  position: absolute;
+  top: 67vh;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1rem 4rem;
+  font-size: 1.8rem;
+  background-color: gold;
+  font-weight: 500;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 2px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  cursor: pointer;
+  transition: color 0.5s, border-radius 0.5s;
+}
+
+.nav-bottom-1060{
+  display: none;
+}
+
+.nav-bottom:hover, .nav-bottom-1060:hover{
+  border-radius: 3rem;
+  color: white;
+}
+
+.nav-bottom:active {
+  scale: 0.9;
+  left: 49%;
+}
+
+/* Correção na seleção de elementos, removendo espaço entre 'a' e '.nav-bottom' */
+a .nav-bottom, a .nav-bottom-1060 {
+  text-decoration: none;
+  color: black;
+}
+
+
+/* Estilos para telas até 1800px */
+@media screen and (max-width: 1800px) {
+  .header-container{
+    padding: 0 18rem !important;
+  }
+
+.header, .blackbox {
+    height: 105vh !important; 
+    border-bottom-left-radius: 9rem !important; 
+    border-bottom-right-radius: 9rem !important;
+}
+
+.display{
+    padding-left: 18.5rem !important; 
+    padding-right: 18rem !important;
+}
+
+}
+
+/* Estilos para telas até 1600px */
+@media screen and (max-width: 1600px) {
+  .header-container{
+    padding: 0 14rem !important;
+  }
+  .header, .blackbox {
+    border-bottom-left-radius: 7rem !important; 
+    border-bottom-right-radius: 7rem !important;
+}
+
+.display{
+    padding-left: 14.5rem !important; 
+    padding-right: 14.5rem !important;
+}
+
+}
+
+/* Estilos para telas até 1300px */
+@media screen and (max-width: 1300px) {
+  .header-container{
+    padding: 0 8rem !important;
+  }
+
+  .header, .blackbox {
+    height: 102vh !important; 
+    border-bottom-left-radius: 5rem !important; 
+    border-bottom-right-radius: 5rem !important;
+}
+
+.title-display-contact{
+  font-size: 1.7rem !important; 
+}
+
+.title-display-contact p {
+    font-size: 1.6rem !important;
+}
+
+.display{
+    padding-left: 8.5rem !important; 
+    padding-right: 8.5rem !important;
+}
+
+.nav-bottom{
+  font-size: 1.6rem !important;
+}
+
+}
+
+/* Estilos para telas até 1030px */
+@media screen and (max-width: 1030px) {
+  .main-nav #sobre_nos, #reserva, #eventos, #contato {
+    display: none; 
+  }
+
+  #more {
+    font-size: 3rem;
+}
+
+  .header-container{
+    padding: 0 4.9rem !important;
+  }
+
+  .header, .blackbox {
+    border-bottom-left-radius: 0 !important; 
+    border-bottom-right-radius: 0 !important;
+  }
+
+  .display{
+    padding-left: 5.5rem !important; 
+    padding-right: 5.5rem !important;
+  }
+  .nav-bottom{
+    display: none;
+  }
+
+  .nav-bottom-1060{
+    display: block;
+    font-size: 1.6rem !important;
+
+  }
+}
+
+/* Estilos para telas até 850px */
+@media screen and (max-width: 850px) {
+  .header, .blackbox {
+    height: 100vh !important; 
+    
+  }
+
+  .header-container{
+    padding: 0 1.4rem !important;
+  }
+  
+  #more {
+    font-size: 3rem; 
+  }
+
+  .main-nav ul {
+    gap: 0; 
+  }
+
+  .display{
+    padding-left: 2rem !important; 
+    padding-right: 2rem !important;
+}
+
+.nav-bottom:hover{
+  border-radius: 0;
+  color: black;
+  }
+
+}
+/* Estilos para telas até 600px */
+@media screen and (max-width: 600px) {
+  .title-display-contact{
+    font-size: 1.5rem !important;
+  }
+
+  .title-display-contact p{
+    font-size: 1.4rem !important;
+  }
+  
+
+}
+
+/* Estilos para telas até 490px */
+@media screen and (max-width: 495px) {
+  .nav-bottom-1060{
+    font-size: 1.5rem !important;
+    padding: 1rem 3rem !important;
+
+  }
+ 
+}
+
+/* Estilos para telas até 430px */
+@media screen and (max-width: 430px) {
+  .nav-bottom-1060{
+    font-size: 1.3rem !important;
+    padding: 1rem 2rem !important;
+
+  }
+  .display{
+    margin: 20vh auto;
+  }
+}
+/* Estilos para telas até 435px */
+@media screen and (max-width: 435px) {
+  .header-logo {
+    font-size: 1.1rem; 
+  }
+
+}
+
+/* Estilos para telas até 375px */
+@media screen and (max-width: 375px){
+  .header-container{
+    padding-left: 0.9rem !important;
+    padding-right: 0.9rem !important;
+  }
+
+  .header-logo {
+    font-size: 1rem !important; 
+  }
+
+  .display{
+    padding-left: 1.3rem !important;
+  }
+ 
+}
+
+/* Estilos para telas até 330px */
+@media screen and (max-width: 355px){
+  .nav-bottom-1060{
+    font-size: 1.2rem !important;
+    padding: 1rem 1.5rem !important;
+
+  }
+
+  .title-display-contact{
+    font-size: 1.2rem !important;
+  }
+
+  .title-display-contact p{
+    font-size: 1.1rem !important;
+  }
+
+}
+
+/* Estilos para telas até 330px */
+@media screen and (max-width: 330px){
+  .header-container{
+    padding-left: 0.8rem !important;
+    padding-right: 0.8rem !important;
+  }
+
+  .header-logo {
+    font-size: 0.8rem !important; 
+  }
+  #more{
+    font-size: 2.5rem !important;
+  }
+
+  .display{
+    margin: 15vh auto;
+  }
+
+
+
+}
+
+/* Estilos para telas até 700px de altura e orientação horizontal */
+@media screen and (max-height: 800px) and (orientation: landscape){
+  .header, .blackbox{
+    height: 100vh !important;
+    }
+
+    .display{
+      margin-top: 15rem !important;
+    }
+
+    .nav-bottom-1060{
+      top: 70vh;
+    }
+}
+/* Estilos para telas até 600px de altura e orientação horizontal */
+@media screen and (max-height: 600px) and (orientation: landscape){
+  .header, .blackbox{
+    height: 120vh !important;
+    }
+
+    .nav-bottom-1060{
+      top: 80vh !important;
+    }
+}
+/* Estilos para telas até 500px de altura e orientação horizontal */
+@media screen and (max-height: 500px) and (orientation: landscape){
+  .header, .blackbox{
+    height: 150vh !important;
+    }
+
+    .nav-bottom-1060{
+      top: 100vh !important;
+    }
+}
+
+/* Estilos para telas até 400px de altura e orientação horizontal */
+@media screen and (max-height: 400px) and (orientation: landscape){
+  .header, .blackbox{
+    height: 180vh !important;
+    }
+
+    .display{
+      margin: 12rem auto !important ;
+    }
+
+    .nav-bottom-1060{
+      top: 120vh !important;
+    }
+}

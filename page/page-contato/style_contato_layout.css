@@ -1,0 +1,96 @@
+/* Zera margens e preenchimentos para garantir consistência entre navegadores */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Configurações gerais para o documento HTML */
+html {
+  font-size: 10px;
+  background: #1a1c1d;
+  font-family: 'poppins';
+  color: #1a1c1d;
+  line-height: 1.5;
+}
+
+/* Definições para a área de cabeçalho */
+.header {
+  grid-area: header;
+}
+
+/* Definições para a área principal */
+.main {
+  grid-area: main;
+}
+
+/* Definições para a área do rodapé */
+.footer {
+  grid-area: footer;
+}
+
+/* Configurações para o layout da grade */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main main main main main main'
+    'footer footer footer footer footer footer';
+}
+
+/* Preenchimento e tamanho de fonte para os elementos dentro da grade */
+.grid-container > * {
+  padding: 2rem 0;
+  font-size: 3rem;
+  box-sizing: content-box;
+}
+
+/* Estilos específicos para a área do cabeçalho */
+.header {
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(/img/coffe.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  border-bottom-left-radius: 10rem;
+  border-bottom-right-radius: 10rem;
+  box-sizing: border-box;
+  box-shadow: 1px 5px 10px black;
+}
+
+/* Estilos específicos para a área principal */
+.main {
+  height: auto;
+  margin: 5rem;
+  border-top-left-radius: 5rem;
+  border-top-right-radius: 5rem;
+  padding: 10rem;
+  background-image: url(../../img/Babkground-coffe.png);
+  background-size: cover;
+  box-shadow: 1px 5px 10px black;
+  box-sizing: border-box;
+  border: #1a1c1d solid 0.6rem;
+}
+
+/* Estilos específicos para a área do rodapé */
+.footer {
+  padding: 0;
+  color: white;
+  height: 30rem;
+}
+
+.header-footer{
+  display: none;
+}
+
+@media screen and (max-width: 315px) {
+  body{
+    overflow-x: hidden;
+  }
+  .nav-bottom-1060{
+    display: none !important;
+  }
+}

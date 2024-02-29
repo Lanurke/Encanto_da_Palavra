@@ -1,0 +1,77 @@
+/* Reset de margens e preenchimentos para todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+  touch-action: none; /* Evitar interações indesejadas em dispositivos com tela sensível ao toque */
+}
+
+/* Estilos globais para o documento HTML */
+html {
+  font-size: 10px;
+  background:  #1a1c1d;
+  font-family: 'poppins';
+  color: #1a1c1d;
+  line-height: 1.5;
+  overflow: hidden; /* Ocultar barras de rolagem vertical e horizontal */
+}
+
+/* Definição das áreas da grade */
+.header { grid-area: header; }
+.main { grid-area: main; }
+.footer { grid-area: footer; }
+
+/* Configuração da grade principal */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main main main main main main'
+    'footer footer footer footer footer footer ';    
+}
+
+/* Estilos comuns para os elementos dentro da grade */
+.grid-container > * {
+  padding: 2rem 0;
+  font-size: 3rem;
+  box-sizing: content-box;
+}
+
+/* Estilos para o cabeçalho (item1) */
+.header  {
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(../../img/xicara.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  box-sizing: border-box;
+  box-shadow: 1px 5px 10px black;
+}
+
+@media screen and (max-width: 315px) {
+  body{
+    overflow-x: hidden;
+  }
+  .container-reserve-title h1{
+    font-size: 2rem !important;
+  }
+  .container-reserve-subtitle{
+    font-size: 0.5rem !important;
+
+  }
+
+
+  .container-reserve span{
+   padding: 0.4rem 2rem !important;
+   margin: 5rem auto;
+  }
+}
+
+@media screen and (max-width: 205px) {
+  .container-reserve span{
+   display: none !important;
+  }
+}

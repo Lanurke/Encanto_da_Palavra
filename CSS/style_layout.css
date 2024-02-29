@@ -1,0 +1,91 @@
+/* Reset de margens e preenchimentos para todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo global para o HTML */
+html {
+  font-size: 10px; /* Tamanho base da fonte */
+  background-color: #1a1c1d; /* Cor de fundo do documento */
+  line-height: 1.5; /* Altura da linha para melhor legibilidade */
+}
+
+
+/* Definição de áreas da grade usando grid-template-areas */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'banner banner banner banner banner banner'
+    'main main main main main main'
+    'footer footer footer footer footer footer';    
+}
+
+/* Estilo padrão para os elementos dentro da grade */
+.grid-container > * {
+  padding: 2rem 0; /* Preenchimento superior e inferior */
+  font-size: 3rem; /* Tamanho da fonte */
+  box-sizing: content-box; /* Model box para incluir apenas a caixa de conteúdo, sem padding ou borda */
+}
+
+/* Estilo para a área do cabeçalho (header) */
+.header {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  padding: 0; 
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: radial-gradient(circle, #522311 52%, rgba(9,4,2,1) 100%);
+}
+
+/* Estilo para a área do banner */
+.banner {
+  height: 120rem;
+  width: 100%;
+  background-image: url(/img/vista.jpg);
+  background-color: white;
+  background-size: cover;
+  background-position: bottom;
+  border-bottom-left-radius: 10rem;
+  border-bottom-right-radius: 10rem;
+  box-sizing: border-box;
+  box-shadow: 1px 5px 10px black;
+}
+
+/* Estilo para a área principal (main) */
+.main {
+  height: auto;
+  width: auto;
+  padding: 10rem;
+  background: #E7DFD7;
+  margin: 5rem;
+  border-top-right-radius: 10rem;
+  border-top-left-radius: 10rem;
+  box-shadow: 1px 1px 10px black, 1px -1px 1px black;
+  box-sizing: border-box;
+  border: solid 0.5rem #744c24;
+}
+
+/* Estilo para a área do rodapé (footer) */
+.footer {
+  padding: 0;
+  color: white;
+  height: 30rem; 
+  
+  
+}
+
+@media screen and (max-width: 310px) {
+  body{
+    overflow-x: hidden;
+  }
+
+  .display-bottom_330{
+    display: none !important;
+  }
+
+}
